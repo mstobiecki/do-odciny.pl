@@ -1,0 +1,14 @@
+{
+	"name": "do-odciny.pl",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "sass src/sass/main.scss css/style.css -w"
+	},
+	"author": "Mateusz Stobiecki",
+	"license": "ISC",
+	"dependencies": {
+		"sass": "^1.62.1"
+	}
+}
