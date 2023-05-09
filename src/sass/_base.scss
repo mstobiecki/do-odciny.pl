@@ -10,12 +10,22 @@ body {
 	font-family: 'Rubik', sans-serif;
 	line-height: 1;
 	font-weight: 400;
-	color: background-color-site;
+	background-color: $background-color-site;
 	overflow-x: hidden;
+	color: #555;
 }
 
 .container {
 	max-width: 120rem;
 	padding: 0 3.2rem;
 	margin: 0 auto;
+}
+
+.heading-primary {
+	margin-bottom: 2rem;
+	font-size: 2.2rem;
+	line-height: 1.2;
+	letter-spacing: -0.5px;
+	font-weight: 700;
+	color: #333;
 }
