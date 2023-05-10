@@ -1,0 +1,19 @@
+.why-we-section {
+	padding: 4.8rem 0;
+	background-color: $background-color-why-we;
+}
+
+.why-we {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	&__description {
+		font-size: 1.4rem;
+		line-height: $paragraph-line-height;
+	}
+	&__icon {
+		margin-right: 0.5rem;
+		font-size: 1.8rem;
+		color: $medium-yellow;
+	}
+}
