@@ -128,7 +128,7 @@ body {
 }
 .hero__description {
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .hero__button {
   display: inline-block;
@@ -157,7 +157,7 @@ body {
   display: flex;
 }
 .about-us__description {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 .about-us__image-box {
@@ -257,6 +257,40 @@ body {
   margin-right: 0.5rem;
   font-size: 1.8rem;
   color: #fcc419;
+}
+
+.step-section {
+  padding: 4.8rem 0;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.step__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.step__number {
+  display: block;
+  font-weight: 600;
+  font-size: 5.2rem;
+  color: #ddd;
+}
+.step__heading {
+  font-size: 2.6rem;
+}
+.step__description {
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+.step__img {
+  width: 100%;
+}
+.step__text-box:nth-child(4) {
+  grid-row: 3;
 }
 
 /*# sourceMappingURL=style.css.map */
