@@ -293,4 +293,37 @@ body {
   grid-row: 3;
 }
 
+.gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../src/img/voucher.webp");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #dee2e6;
+}
+.gift__heading {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+.gift__description {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.gift__box {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gift__button {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #fcc419;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
