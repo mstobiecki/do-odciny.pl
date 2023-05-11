@@ -19,7 +19,7 @@ body {
 
 .container {
   max-width: 120rem;
-  padding: 0 3.2rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
@@ -324,6 +324,49 @@ body {
   font-size: 2rem;
   background-color: #fcc419;
   color: #fff;
+}
+
+.accordion {
+  padding: 4.8rem 0;
+}
+.accordion__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.accordion__item {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  padding: 1rem;
+  transition: all 0.4s;
+}
+.accordion__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.accordion__heading {
+  font-weight: 500;
+  color: #333;
+  font-size: 1.7rem;
+}
+.accordion__number {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #cbcaca;
+}
+.accordion__icon {
+  color: #fcc419;
+  font-size: 1.8rem;
+}
+.accordion__description {
+  display: none;
+  padding-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.accordion__open--js {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

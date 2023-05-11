@@ -1,0 +1,43 @@
+.accordion {
+	padding: 4.8rem 0;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	&__item {
+		box-shadow: $box-shadow-light;
+		padding: 1rem;
+		transition: all 0.4s;
+		// border-top: 3px solid $medium-yellow;
+	}
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.4rem;
+	}
+	&__heading {
+		font-weight: 500;
+		color: #333;
+		font-size: 1.7rem;
+	}
+	&__number {
+		font-weight: 500;
+		font-size: 1.8rem;
+		color: #cbcaca;
+	}
+	&__icon {
+		color: $medium-yellow;
+		font-size: 1.8rem;
+	}
+	&__description {
+		display: none;
+		padding-top: 2rem;
+		font-size: 1.4rem;
+		line-height: $paragraph-line-height;
+	}
+	&__open--js {
+		display: block;
+	}
+}
