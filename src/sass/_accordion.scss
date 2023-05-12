@@ -8,8 +8,6 @@
 	&__item {
 		box-shadow: $box-shadow-light;
 		padding: 1rem;
-		transition: all 0.4s;
-		// border-top: 3px solid $medium-yellow;
 	}
 	&__box {
 		display: flex;
@@ -32,12 +30,20 @@
 		font-size: 1.8rem;
 	}
 	&__description {
-		display: none;
-		padding-top: 2rem;
-		font-size: 1.4rem;
+		max-height: 0;
 		line-height: $paragraph-line-height;
+		font-size: 1.4rem;
+		overflow: hidden;
+		transition: all 0.4s;
+	}
+	&__rotate--js {
+		transform: rotate(180deg);
 	}
 	&__open--js {
-		display: block;
+		max-height: 10rem;
+		padding-top: 1.5rem;
+	}
+	&__border--js {
+		box-shadow: inset 0px 5px 2px -3px $medium-yellow;
 	}
 }
