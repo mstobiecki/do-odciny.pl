@@ -1,9 +1,6 @@
 const navigation = document.querySelector('.navigation');
 const hamburgerNavigation = document.querySelector('.btn-mobile-nav');
 const accordion = document.querySelector('.accordion');
-const allElementsAccordion = document.querySelectorAll(
-	'.accordion__description'
-);
 const slides = document.querySelectorAll('.testimonials__item');
 const buttonLeftSlider = document.querySelector('.testimonials__button--left');
 const buttonRightSlider = document.querySelector(

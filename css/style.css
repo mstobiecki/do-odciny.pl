@@ -335,8 +335,8 @@ body {
   gap: 2rem;
 }
 .accordion__item {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   padding: 1rem;
+  background-color: #f1f3f5;
 }
 .accordion__box {
   display: flex;
