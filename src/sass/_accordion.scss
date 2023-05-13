@@ -40,8 +40,8 @@
 		transform: rotate(180deg);
 	}
 	&__open--js {
-		max-height: 10rem;
 		padding-top: 1.5rem;
+		max-height: 10rem;
 	}
 	&__border--js {
 		box-shadow: inset 0px 5px 2px -3px $medium-yellow;

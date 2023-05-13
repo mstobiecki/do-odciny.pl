@@ -1,0 +1,66 @@
+.testimonials {
+	padding: 4.8rem 0;
+	&__wrapper {
+		max-width: 100rem;
+		height: 20rem;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	&__item {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 2rem;
+		padding: 1.5rem;
+		// box-shadow: $box-shadow-light;
+		transition: transform 1s;
+	}
+	&__img-box {
+		@include flexCenter;
+		grid-column: 1 / 2;
+	}
+	&__img {
+		width: 60px;
+		height: 60px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+	&__text-box {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		grid-column: 2 / 4;
+		line-height: $paragraph-line-height;
+	}
+	&__description {
+		font-size: 1.4rem;
+	}
+	&__author {
+		font-size: 1.2rem;
+	}
+	&__job {
+		font-size: 1.2rem;
+	}
+	&__button {
+		position: absolute;
+		top: 50%;
+		border: none;
+		background-color: transparent;
+		color: $medium-yellow;
+		font-size: 2.5rem;
+		padding: 1rem;
+		z-index: 100;
+	}
+	&__button--left {
+		top: 50%;
+		left: 3%;
+		transform: translate(-50%, -50%);
+	}
+	&__button--right {
+		right: 3%;
+		transform: translate(50%, -50%);
+	}
+}

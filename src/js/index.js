@@ -4,6 +4,11 @@ const accordion = document.querySelector('.accordion');
 const allElementsAccordion = document.querySelectorAll(
 	'.accordion__description'
 );
+const slides = document.querySelectorAll('.testimonials__item');
+const buttonLeftSlider = document.querySelector('.testimonials__button--left');
+const buttonRightSlider = document.querySelector(
+	'.testimonials__button--right'
+);
 
 const navigationMenu = function () {
 	navigation.classList.toggle('navigation__open--js');
@@ -29,6 +34,29 @@ const accordionMenu = function (e) {
 
 	clicked.classList.toggle('accordion__border--js');
 };
+
+const slider = function () {
+	const slidesLength = slides.length - 1;
+	let currentSlide = 0;
+
+	const activateSlide = function (s) {
+		slides.forEach(
+			(slide, i) => (slide.style.transform = `translateX(${100 * (i - s)}%)`)
+		);
+	};
+
+	activateSlide(0);
+
+	const nextSlide = function () {
+		if (currentSlide === slidesLength) currentSlide = 0;
+		else currentSlide++;
+
+		activateSlide(currentSlide);
+	};
+
+	buttonRightSlider.addEventListener('click', nextSlide);
+};
+slider();
 
 hamburgerNavigation.addEventListener('click', navigationMenu);
 accordion.addEventListener('click', accordionMenu);
