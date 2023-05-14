@@ -378,6 +378,7 @@ body {
 
 .testimonials {
   padding: 4.8rem 0;
+  background-color: #f1f3f5;
 }
 .testimonials__wrapper {
   max-width: 100rem;
@@ -409,9 +410,6 @@ body {
   border-radius: 50%;
 }
 .testimonials__text-box {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
   grid-column: 2/4;
   line-height: 1.6;
 }
@@ -419,6 +417,8 @@ body {
   font-size: 1.4rem;
 }
 .testimonials__author {
+  margin-top: 1rem;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 .testimonials__job {
