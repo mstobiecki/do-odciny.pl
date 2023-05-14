@@ -1,0 +1,46 @@
+.newsletter {
+	background-color: #fff3bf;
+	&__wrapper {
+		padding: 2rem;
+	}
+	&__heading {
+		font-size: 2.2rem;
+	}
+	&__description {
+		margin-top: 1rem;
+		font-size: 1.4rem;
+		line-height: $paragraph-line-height;
+	}
+	&__form {
+		margin-top: 1rem;
+	}
+	&__label {
+		display: block;
+		margin-bottom: 0.5rem;
+		font-size: 1.4rem;
+	}
+	&__input {
+		padding: 0.4rem 0.8rem;
+		border: none;
+		background-color: #f8f9fa;
+	}
+	&__button {
+		border: none;
+		background-color: $medium-yellow;
+		padding: 0.4rem 0.8rem;
+		font-weight: 500;
+		color: #333;
+	}
+	&__approvals {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-top: 1rem;
+		font-size: 1.4rem;
+	}
+	&__private {
+		text-decoration: none;
+		color: #333;
+		border-bottom: 2px solid $medium-yellow;
+	}
+}

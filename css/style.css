@@ -444,4 +444,51 @@ body {
   transform: translate(50%, -50%);
 }
 
+.newsletter {
+  background-color: #fff3bf;
+}
+.newsletter__wrapper {
+  padding: 2rem;
+}
+.newsletter__heading {
+  font-size: 2.2rem;
+}
+.newsletter__description {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.newsletter__form {
+  margin-top: 1rem;
+}
+.newsletter__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+.newsletter__input {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #f8f9fa;
+}
+.newsletter__button {
+  border: none;
+  background-color: #fcc419;
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+  color: #333;
+}
+.newsletter__approvals {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.newsletter__private {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px solid #fcc419;
+}
+
 /*# sourceMappingURL=style.css.map */
