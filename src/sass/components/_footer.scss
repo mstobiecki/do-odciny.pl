@@ -8,8 +8,9 @@
 	}
 	&__socials {
 		display: flex;
+		gap: $gap-large;
+		margin-top: $margin-medium;
 		list-style: none;
-		gap: $gap-small;
 	}
 	&__logo {
 		display: block;
