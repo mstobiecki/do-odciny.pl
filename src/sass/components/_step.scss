@@ -5,6 +5,10 @@
 		grid-template-columns: 1fr;
 		gap: 3rem;
 	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+	}
 	&__text-box {
 		display: flex;
 		flex-direction: column;
@@ -20,8 +24,9 @@
 		font-size: 2.6rem;
 	}
 	&__description {
+		margin-top: $margin-medium;
 		line-height: $line-height-medium;
-		font-size: $font-size-small;
+		font-size: $font-size-medium;
 	}
 	&__img {
 		width: 100%;

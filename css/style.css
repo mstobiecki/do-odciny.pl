@@ -33,7 +33,7 @@ body {
 .heading-secondary,
 .heading-tertiary,
 .heading-fourth {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   line-height: 1.2;
   letter-spacing: -0.5px;
   font-weight: 700;
@@ -41,21 +41,22 @@ body {
 }
 
 .heading-primary {
-  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
 }
 
 .heading-secondary {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 .heading-tertiary {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   text-align: center;
 }
 
 .heading-fourth {
   margin-bottom: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -63,8 +64,9 @@ body {
   display: inline-block;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  color: #f59f00;
   font-weight: 500;
+  font-size: 1.4rem;
+  color: #f59f00;
 }
 
 .header {
@@ -135,7 +137,7 @@ body {
 }
 .hero__description {
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .hero__button {
   display: inline-block;
@@ -162,7 +164,7 @@ body {
   display: flex;
 }
 .about-us__description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 .about-us__image-box {
@@ -205,13 +207,13 @@ body {
 }
 .popular__price {
   margin-bottom: 0.5rem;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   color: #fcc419;
 }
 .popular__time {
   margin-bottom: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .popular__list {
   display: flex;
@@ -224,6 +226,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1.8rem;
 }
 .popular__icon {
   font-size: 2rem;
@@ -250,15 +253,15 @@ body {
 .why-we__wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 4rem;
 }
 .why-we__description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 .why-we__icon {
   margin-right: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fcc419;
 }
 
@@ -269,6 +272,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+}
+.step__box {
+  display: flex;
+  flex-direction: column;
 }
 .step__text-box {
   display: flex;
@@ -285,8 +292,9 @@ body {
   font-size: 2.6rem;
 }
 .step__description {
+  margin-top: 1rem;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .step__img {
   width: 100%;
@@ -349,7 +357,7 @@ body {
 .accordion__heading {
   font-weight: 500;
   color: #333;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 .accordion__number {
   font-weight: 500;
