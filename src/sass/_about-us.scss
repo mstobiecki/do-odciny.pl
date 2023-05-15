@@ -1,10 +1,10 @@
-.about-us-section {
-	padding: $padding-section-mobile;
-}
 .about-us {
-	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 3rem;
+	padding: $padding-section-mobile;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 3rem;
+	}
 	&__text-box {
 		display: flex;
 	}

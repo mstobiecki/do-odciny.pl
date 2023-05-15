@@ -115,11 +115,10 @@ body {
   color: #333;
 }
 
-.hero-section {
+.hero {
   padding: 4.8rem 0 4.8rem 0;
 }
-
-.hero {
+.hero__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 3rem;
@@ -143,11 +142,10 @@ body {
   width: 80%;
 }
 
-.about-us-section {
+.about-us {
   padding: 4.8rem 0;
 }
-
-.about-us {
+.about-us__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 3rem;
@@ -174,11 +172,10 @@ body {
   order: 1;
 }
 
-.section-popular {
+.popular {
   padding: 4.8rem 0;
 }
-
-.popular {
+.popular__wrapper {
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -238,12 +235,11 @@ body {
   color: #fff;
 }
 
-.why-we-section {
+.why-we {
   padding: 4.8rem 0;
   background-color: #f1f3f5;
 }
-
-.why-we {
+.why-we__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -258,11 +254,10 @@ body {
   color: #fcc419;
 }
 
-.step-section {
+.step {
   padding: 4.8rem 0;
 }
-
-.step {
+.step__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;

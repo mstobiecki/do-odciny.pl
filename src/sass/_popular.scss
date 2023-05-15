@@ -1,11 +1,10 @@
-.section-popular {
-	padding: $padding-section-mobile;
-}
-
 .popular {
-	display: flex;
-	flex-direction: column;
-	gap: 6rem;
+	padding: $padding-section-mobile;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 6rem;
+	}
 	&__card {
 		box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 	}

@@ -1,12 +1,12 @@
-.hero-section {
-	padding: 4.8rem 0 4.8rem 0;
-}
 .hero {
-	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 3rem;
-	padding: 0 1rem;
-	text-align: center;
+	padding: 4.8rem 0 4.8rem 0;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 3rem;
+		padding: 0 1rem;
+		text-align: center;
+	}
 	&__description {
 		line-height: $line-height-medium;
 		font-size: $font-size-small;

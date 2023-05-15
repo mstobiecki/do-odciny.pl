@@ -1,12 +1,11 @@
-.why-we-section {
+.why-we {
 	padding: $padding-section-mobile;
 	background-color: $background-color-light;
-}
-
-.why-we {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: $gap-large;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: $gap-large;
+	}
 	&__description {
 		font-size: $font-size-small;
 		line-height: $line-height-medium;

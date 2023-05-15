@@ -1,11 +1,10 @@
-.step-section {
-	padding: $padding-section-mobile;
-}
-
 .step {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 3rem;
+	padding: $padding-section-mobile;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
 	&__text-box {
 		display: flex;
 		flex-direction: column;
