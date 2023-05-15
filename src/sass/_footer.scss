@@ -1,5 +1,5 @@
 .footer {
-	padding: 4.8rem 0;
+	padding: $padding-section-mobile;
 	background-color: $background-color-site;
 	&__wrapper {
 		display: flex;
@@ -9,12 +9,12 @@
 	&__socials {
 		display: flex;
 		list-style: none;
-		gap: 0.5rem;
+		gap: $gap-small;
 	}
 	&__logo {
 		display: block;
-		margin-bottom: 1rem;
-		font-size: 1.4rem;
+		margin-bottom: $margin-medium;
+		font-size: $font-size-small;
 	}
 	&__item {
 		font-size: 2rem;
@@ -23,8 +23,8 @@
 		color: #555;
 	}
 	&__heading {
-		margin-bottom: 1rem;
-		font-size: 1.4rem;
+		margin-bottom: $margin-medium;
+		font-size: $font-size-small;
 		font-weight: 500;
 	}
 	&__address {
@@ -32,10 +32,10 @@
 		flex-direction: column;
 		gap: 0.5rem;
 		font-style: normal;
-		font-size: 1.4rem;
+		font-size: $font-size-small;
 	}
 	&__phone {
-		margin-top: 1rem;
+		margin-top: $margin-medium;
 	}
 	&__mail,
 	&__phone {

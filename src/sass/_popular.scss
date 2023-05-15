@@ -1,5 +1,5 @@
 .section-popular {
-	padding: 4.8rem 0;
+	padding: $padding-section-mobile;
 }
 
 .popular {
@@ -32,14 +32,14 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: $gap-medium;
 		list-style: none;
-		font-size: 1.6rem;
+		font-size: $font-size-medium;
 	}
 	&__specifications {
 		display: flex;
 		align-items: center;
-		gap: 1rem;
+		gap: $gap-medium;
 	}
 	&__icon {
 		font-size: 2rem;

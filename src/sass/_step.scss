@@ -1,5 +1,5 @@
 .step-section {
-	padding: 4.8rem 0;
+	padding: $padding-section-mobile;
 }
 
 .step {
@@ -21,8 +21,8 @@
 		font-size: 2.6rem;
 	}
 	&__description {
-		line-height: $paragraph-line-height;
-		font-size: $paragraph-font-size-small;
+		line-height: $line-height-medium;
+		font-size: $font-size-small;
 	}
 	&__img {
 		width: 100%;

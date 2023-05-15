@@ -1,9 +1,9 @@
 .accordion {
-	padding: 4.8rem 0;
+	padding: $padding-section-mobile;
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: $gap-large;
 	}
 	&__item {
 		padding: 1rem;
@@ -13,26 +13,26 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		font-size: 1.4rem;
+		font-size: $font-size-small;
 	}
 	&__heading {
 		font-weight: 500;
 		color: #333;
-		font-size: 1.7rem;
+		font-size: $font-size-medium;
 	}
 	&__number {
 		font-weight: 500;
-		font-size: 1.8rem;
+		font-size: $font-size-large;
 		color: #cbcaca;
 	}
 	&__icon {
 		color: $medium-yellow;
-		font-size: 1.8rem;
+		font-size: $font-size-large;
 	}
 	&__description {
 		max-height: 0;
-		line-height: $paragraph-line-height;
-		font-size: 1.4rem;
+		line-height: $line-height-medium;
+		font-size: $font-size-small;
 		overflow: hidden;
 		transition: all 0.4s;
 	}

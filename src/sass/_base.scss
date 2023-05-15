@@ -41,13 +41,13 @@ body {
 }
 
 .heading-tertiary {
-	font-size: 1.8rem;
+	font-size: $font-size-large;
 	text-align: center;
 }
 
 .heading-fourth {
 	margin-bottom: 1rem;
-	font-size: 1.6rem;
+	font-size: $font-size-medium;
 	font-weight: 700;
 }
 

@@ -1,5 +1,5 @@
 .testimonials {
-	padding: 4.8rem 0;
+	padding: $padding-section-mobile;
 	background-color: $background-color-light;
 	&__wrapper {
 		max-width: 100rem;
@@ -16,7 +16,6 @@
 		grid-template-columns: 1fr 2fr;
 		column-gap: 2rem;
 		padding: 1.5rem;
-		// box-shadow: $box-shadow-light;
 		transition: transform 1s;
 	}
 	&__img-box {
@@ -31,10 +30,10 @@
 	}
 	&__text-box {
 		grid-column: 2 / 4;
-		line-height: $paragraph-line-height;
+		line-height: $line-height-medium;
 	}
 	&__description {
-		font-size: 1.4rem;
+		font-size: $font-size-small;
 	}
 	&__author {
 		margin-top: 1rem;

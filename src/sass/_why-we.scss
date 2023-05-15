@@ -1,19 +1,19 @@
 .why-we-section {
-	padding: 4.8rem 0;
+	padding: $padding-section-mobile;
 	background-color: $background-color-light;
 }
 
 .why-we {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 2rem;
+	gap: $gap-large;
 	&__description {
-		font-size: 1.4rem;
-		line-height: $paragraph-line-height;
+		font-size: $font-size-small;
+		line-height: $line-height-medium;
 	}
 	&__icon {
-		margin-right: 0.5rem;
-		font-size: 1.8rem;
+		margin-right: $margin-small;
+		font-size: $font-size-large;
 		color: $medium-yellow;
 	}
 }
