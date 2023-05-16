@@ -67,11 +67,3 @@
 		}
 	}
 }
-
-@media (min-width: 75em) {
-	.popular {
-		&__wrapper {
-			grid-template-columns: repeat(4, 1fr);
-		}
-	}
-}

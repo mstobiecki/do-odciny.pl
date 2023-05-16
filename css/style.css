@@ -359,11 +359,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 75em) {
-  .popular__wrapper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 .why-we {
   padding: 4.8rem 0;
 }
