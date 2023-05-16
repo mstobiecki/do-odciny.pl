@@ -39,5 +39,25 @@
 			grid-template-columns: repeat(2, 1fr);
 			align-items: center;
 		}
+		&__description {
+			padding: 0 1rem;
+		}
+	}
+}
+
+@media (min-width: 62em) {
+	.hero {
+		&__text-box {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+		}
+		&__description {
+			font-size: $font-size-large-xxl;
+		}
+		&__button {
+			padding: 1.5rem 3rem;
+			font-size: $font-size-large;
+		}
 	}
 }

@@ -45,3 +45,14 @@
 		}
 	}
 }
+
+@media (min-width: 62em) {
+	.gift {
+		&__heading {
+			font-size: 3.2rem;
+		}
+		&__description {
+			width: 50%;
+		}
+	}
+}

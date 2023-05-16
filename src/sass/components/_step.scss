@@ -49,3 +49,11 @@
 		}
 	}
 }
+
+@media (min-width: 62em) {
+	.step {
+		&__wrapper {
+			align-items: center;
+		}
+	}
+}

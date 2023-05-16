@@ -4,3 +4,9 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+@media (min-width: 62em) {
+	.header {
+		padding: 2rem 10rem;
+	}
+}

@@ -50,6 +50,16 @@
 
 @media (min-width: 36em) {
 	.accordion {
-		font-size: $font-size-large-xxl;
+		&__heading {
+			font-size: $font-size-large-xxl;
+		}
+	}
+}
+
+@media (min-width: 62em) {
+	.accordion {
+		&__description {
+			font-size: $font-size-medium;
+		}
 	}
 }

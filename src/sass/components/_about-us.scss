@@ -36,3 +36,11 @@
 		}
 	}
 }
+
+@media (min-width: 62em) {
+	.about-us {
+		&__description {
+			font-size: $font-size-large;
+		}
+	}
+}
