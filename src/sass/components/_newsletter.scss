@@ -12,7 +12,7 @@
 		line-height: $line-height-medium;
 	}
 	&__form {
-		margin-top: $margin-medium;
+		margin-top: $margin-large;
 	}
 	&__label {
 		display: block;
@@ -42,5 +42,22 @@
 		text-decoration: none;
 		color: #333;
 		border-bottom: 2px solid $medium-yellow;
+	}
+}
+
+@media (min-width: 36em) {
+	.newsletter {
+		&__heading {
+			font-size: 2.8rem;
+		}
+		&__description,
+		&__label,
+		&__approvals {
+			font-size: $font-size-medium;
+		}
+		&__input,
+		&__button {
+			padding: 0.6rem 1.2rem;
+		}
 	}
 }

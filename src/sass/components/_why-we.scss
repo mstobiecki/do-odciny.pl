@@ -16,3 +16,12 @@
 		color: $medium-yellow;
 	}
 }
+
+@media (min-width: 36em) {
+	.why-we {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 6rem;
+		}
+	}
+}

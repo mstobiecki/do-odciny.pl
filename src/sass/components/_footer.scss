@@ -18,7 +18,7 @@
 		font-size: $font-size-small;
 	}
 	&__item {
-		font-size: 2rem;
+		font-size: $font-size-large-xl;
 	}
 	&__link {
 		color: #555;
@@ -42,5 +42,15 @@
 	&__phone {
 		text-decoration: none;
 		color: #555;
+	}
+}
+
+@media (min-width: 36em) {
+	.footer {
+		&__logo,
+		&__address,
+		&__heading {
+			font-size: $font-size-medium;
+		}
 	}
 }

@@ -25,3 +25,14 @@
 		order: 1;
 	}
 }
+
+@media (min-width: 36em) {
+	.about-us {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: center;
+			align-items: center;
+			column-gap: 6rem;
+		}
+	}
+}

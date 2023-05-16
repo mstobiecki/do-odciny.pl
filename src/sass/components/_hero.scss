@@ -24,3 +24,11 @@
 		width: 80%;
 	}
 }
+
+@media (min-width: 36em) {
+	.hero {
+		&__image {
+			width: 60%;
+		}
+	}
+}

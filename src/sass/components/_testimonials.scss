@@ -54,12 +54,27 @@
 		z-index: 100;
 	}
 	&__button--left {
-		top: 50%;
 		left: 3%;
 		transform: translate(-50%, -50%);
 	}
 	&__button--right {
 		right: 3%;
 		transform: translate(50%, -50%);
+	}
+}
+
+@media (min-width: 36em) {
+	.testimonials {
+		&__description {
+			font-size: $font-size-medium;
+		}
+		&__img {
+			width: 80px;
+			height: 80px;
+		}
+		&__job,
+		&__author {
+			font-size: $font-size-small;
+		}
 	}
 }

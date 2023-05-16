@@ -57,3 +57,12 @@
 		color: #fff;
 	}
 }
+
+@media (min-width: 36em) {
+	.popular {
+		&__wrapper {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}

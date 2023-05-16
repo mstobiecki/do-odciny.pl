@@ -7,7 +7,6 @@
 	height: 60vh;
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	color: $medium-gray;
 	&__heading {
 		margin-bottom: $margin-large;
@@ -27,5 +26,22 @@
 		font-size: 2rem;
 		background-color: $medium-yellow;
 		color: #fff;
+	}
+}
+
+@media (min-width: 36em) {
+	.gift {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		&__heading {
+			font-size: 2.8rem;
+		}
+		&__description {
+			width: 70%;
+		}
 	}
 }
