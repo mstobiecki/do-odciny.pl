@@ -67,8 +67,14 @@ body {
 	color: #f59f00;
 }
 
-@media screen and (min-width: 36em) {
+@media (min-width: 36em) {
 	html {
 		font-size: 62.5;
+	}
+}
+
+@media (min-width: 48em) {
+	.container {
+		padding: 0 3.2rem;
 	}
 }

@@ -32,3 +32,12 @@
 		}
 	}
 }
+
+@media (min-width: 48em) {
+	.hero {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+		}
+	}
+}

@@ -69,9 +69,14 @@ body {
   color: #f59f00;
 }
 
-@media screen and (min-width: 36em) {
+@media (min-width: 36em) {
   html {
     font-size: 62.5;
+  }
+}
+@media (min-width: 48em) {
+  .container {
+    padding: 0 3.2rem;
   }
 }
 .header {
@@ -161,6 +166,12 @@ body {
 @media (min-width: 36em) {
   .hero__image {
     width: 60%;
+  }
+}
+@media (min-width: 48em) {
+  .hero__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 }
 .about-us {
@@ -334,6 +345,17 @@ body {
   grid-row: 3;
 }
 
+@media (min-width: 48em) {
+  .step__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 9rem;
+  }
+  .step__text-box:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
 .gift {
   display: flex;
   flex-direction: column;
