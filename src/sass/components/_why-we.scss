@@ -1,6 +1,5 @@
 .why-we {
 	padding: $padding-section-mobile;
-	background-color: $background-color-light;
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -22,6 +21,14 @@
 		&__wrapper {
 			grid-template-columns: repeat(2, 1fr);
 			row-gap: 6rem;
+		}
+	}
+}
+
+@media (min-width: 75em) {
+	.why-we {
+		&__wrapper {
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
 }

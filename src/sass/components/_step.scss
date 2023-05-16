@@ -1,5 +1,6 @@
 .step {
 	padding: $padding-section-mobile;
+	background-color: $background-color-light;
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -54,6 +55,20 @@
 	.step {
 		&__wrapper {
 			align-items: center;
+		}
+	}
+}
+
+@media (min-width: 75em) {
+	.step {
+		&__number {
+			font-size: 8.2rem;
+		}
+		&__heading {
+			font-size: 3.6rem;
+		}
+		&__description {
+			font-size: $font-size-large;
 		}
 	}
 }

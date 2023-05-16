@@ -91,6 +91,7 @@ body {
   }
 }
 .header {
+  background-color: #f1f3f5;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -182,6 +183,7 @@ body {
 }
 .hero {
   padding: 4.8rem 0 4.8rem 0;
+  background-color: #f1f3f5;
 }
 .hero__wrapper {
   display: grid;
@@ -266,6 +268,11 @@ body {
 }
 
 @media (min-width: 36em) {
+  .about-us__image {
+    width: 90%;
+  }
+}
+@media (min-width: 48em) {
   .about-us__wrapper {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -277,9 +284,13 @@ body {
   .about-us__description {
     font-size: 1.8rem;
   }
+  .about-us__image {
+    width: 90%;
+  }
 }
 .popular {
   padding: 4.8rem 0;
+  background-color: #f1f3f5;
 }
 .popular__wrapper {
   display: flex;
@@ -348,9 +359,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (min-width: 75em) {
+  .popular__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .why-we {
   padding: 4.8rem 0;
-  background-color: #f1f3f5;
 }
 .why-we__wrapper {
   display: grid;
@@ -373,8 +388,14 @@ body {
     row-gap: 6rem;
   }
 }
+@media (min-width: 75em) {
+  .why-we__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .step {
   padding: 4.8rem 0;
+  background-color: #f1f3f5;
 }
 .step__wrapper {
   display: grid;
@@ -425,6 +446,17 @@ body {
 @media (min-width: 62em) {
   .step__wrapper {
     align-items: center;
+  }
+}
+@media (min-width: 75em) {
+  .step__number {
+    font-size: 8.2rem;
+  }
+  .step__heading {
+    font-size: 3.6rem;
+  }
+  .step__description {
+    font-size: 1.8rem;
   }
 }
 .gift {
@@ -680,7 +712,6 @@ body {
 }
 .footer {
   padding: 4.8rem 0;
-  background-color: #f8f9fa;
 }
 .footer__wrapper {
   display: flex;

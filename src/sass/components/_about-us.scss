@@ -28,6 +28,14 @@
 
 @media (min-width: 36em) {
 	.about-us {
+		&__image {
+			width: 90%;
+		}
+	}
+}
+
+@media (min-width: 48em) {
+	.about-us {
 		&__wrapper {
 			grid-template-columns: repeat(2, 1fr);
 			justify-items: center;
@@ -41,6 +49,9 @@
 	.about-us {
 		&__description {
 			font-size: $font-size-large;
+		}
+		&__image {
+			width: 90%;
 		}
 	}
 }
