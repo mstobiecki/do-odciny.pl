@@ -1,5 +1,6 @@
 const navigation = document.querySelector('.navigation');
 const hamburgerNavigation = document.querySelector('.btn-mobile-nav');
+const navigationList = document.querySelector('.navigation__list');
 const accordion = document.querySelector('.accordion');
 const slides = document.querySelectorAll('.testimonials__item');
 const buttonLeftSlider = document.querySelector('.testimonials__button--left');
@@ -9,6 +10,16 @@ const buttonRightSlider = document.querySelector(
 
 const navigationMenu = function () {
 	navigation.classList.toggle('navigation__open--js');
+};
+
+const smoothNavigation = function (e) {
+	e.preventDefault();
+
+	if (e.target.classList.contains('navigation__link')) {
+		const id = e.target.getAttribute('href');
+		document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+		navigationMenu();
+	}
 };
 
 const accordionMenu = function (e) {
@@ -56,4 +67,5 @@ const slider = function () {
 slider();
 
 hamburgerNavigation.addEventListener('click', navigationMenu);
+navigationList.addEventListener('click', smoothNavigation);
 accordion.addEventListener('click', accordionMenu);
