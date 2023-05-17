@@ -1,6 +1,7 @@
-const navigation = document.querySelector('.navigation');
+const header = document.querySelector('.header');
 const hamburgerNavigation = document.querySelector('.btn-mobile-nav');
 const navigationList = document.querySelector('.navigation__list');
+const heroSection = document.querySelector('.hero');
 const accordion = document.querySelector('.accordion');
 const slides = document.querySelectorAll('.testimonials__item');
 const buttonLeftSlider = document.querySelector('.testimonials__button--left');
@@ -9,7 +10,7 @@ const buttonRightSlider = document.querySelector(
 );
 
 const navigationMenu = function () {
-	navigation.classList.toggle('navigation__open--js');
+	header.classList.toggle('navigation__open--js');
 };
 
 const smoothNavigation = function (e) {
@@ -20,6 +21,22 @@ const smoothNavigation = function (e) {
 		document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
 		navigationMenu();
 	}
+};
+
+const stickyNavigation = function () {
+	const headerHeight = header.getBoundingClientRect().height;
+	const sticky = function (entries) {
+		const [entry] = entries;
+
+		if (!entry.isIntersecting) document.body.classList.add('sticky');
+		else document.body.classList.remove('sticky');
+	};
+	const heroSectionObserver = new IntersectionObserver(sticky, {
+		root: null,
+		threshold: 0,
+		rootMargin: `-${headerHeight}px`,
+	});
+	heroSectionObserver.observe(heroSection);
 };
 
 const accordionMenu = function (e) {
@@ -64,7 +81,12 @@ const slider = function () {
 
 	buttonRightSlider.addEventListener('click', nextSlide);
 };
-slider();
+
+const init = function () {
+	stickyNavigation();
+	slider();
+};
+init();
 
 hamburgerNavigation.addEventListener('click', navigationMenu);
 navigationList.addEventListener('click', smoothNavigation);
