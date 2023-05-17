@@ -25,8 +25,15 @@
 	}
 }
 
+@media (min-width: 48em) {
+	.why-we {
+		padding: $padding-section-tablet;
+	}
+}
+
 @media (min-width: 75em) {
 	.why-we {
+		padding: $padding-section-dekstop;
 		&__wrapper {
 			grid-template-columns: repeat(4, 1fr);
 		}

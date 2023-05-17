@@ -56,10 +56,22 @@
 	}
 }
 
+@media (min-width: 48em) {
+	.accordion {
+		padding: $padding-section-tablet;
+	}
+}
+
 @media (min-width: 62em) {
 	.accordion {
 		&__description {
 			font-size: $font-size-medium;
 		}
+	}
+}
+
+@media (min-width: 75em) {
+	.accordion {
+		padding: $padding-section-dekstop;
 	}
 }

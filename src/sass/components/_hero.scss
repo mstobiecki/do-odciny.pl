@@ -40,7 +40,8 @@
 @media (min-width: 48em) {
 	.hero {
 		&__wrapper {
-			grid-template-columns: repeat(2, 1fr);
+			// grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: 45fr 55fr;
 			align-items: center;
 		}
 		&__description {

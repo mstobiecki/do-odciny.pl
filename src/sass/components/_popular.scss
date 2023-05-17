@@ -67,3 +67,15 @@
 		}
 	}
 }
+
+@media (min-width: 48em) {
+	.popular {
+		padding: $padding-section-tablet;
+	}
+}
+
+@media (min-width: 75em) {
+	.popular {
+		padding: $padding-section-dekstop;
+	}
+}

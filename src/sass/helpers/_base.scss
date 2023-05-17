@@ -77,17 +77,26 @@ body {
 	.container {
 		padding: 0 3.2rem;
 	}
+	.heading-secondary {
+		margin-bottom: 6.8rem;
+	}
 }
 
 @media (min-width: 62em) {
 	.heading-primary {
-		font-size: 4.2rem;
+		font-size: 5.2rem;
 	}
 	.heading-secondary {
 		font-size: 3rem;
 	}
 	.subheading {
 		font-size: $font-size-medium;
+	}
+}
+
+@media (min-width: 75em) {
+	.heading-secondary {
+		margin-bottom: 9.8rem;
 	}
 }
 
