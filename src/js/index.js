@@ -79,7 +79,15 @@ const slider = function () {
 		activateSlide(currentSlide);
 	};
 
+	const previousSlide = function () {
+		if (currentSlide === 0) currentSlide = slidesLength;
+		else currentSlide--;
+
+		activateSlide(currentSlide);
+	};
+
 	buttonRightSlider.addEventListener('click', nextSlide);
+	buttonLeftSlider.addEventListener('click', previousSlide);
 };
 
 const init = function () {

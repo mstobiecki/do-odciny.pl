@@ -643,21 +643,11 @@ section {
   background-color: #f1f3f5;
 }
 .testimonials__wrapper {
-  max-width: 100rem;
+  max-width: 90rem;
   height: 20rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-}
-.testimonials__wrapper::after {
-  content: '"';
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  font-weight: 600;
-  font-size: 8.2rem;
-  opacity: 0.3;
-  color: #ddd;
 }
 .testimonials__item {
   position: absolute;
@@ -723,10 +713,6 @@ section {
   .testimonials__description {
     font-size: 1.6rem;
   }
-  .testimonials__img {
-    width: 10rem;
-    height: 10rem;
-  }
   .testimonials__job, .testimonials__author {
     font-size: 1.4rem;
   }
@@ -738,10 +724,6 @@ section {
   .testimonials {
     padding: 6.8rem 0;
   }
-  .testimonials__img {
-    width: 12rem;
-    height: 12rem;
-  }
   .testimonials__item {
     padding: 3.2rem;
   }
@@ -749,10 +731,6 @@ section {
 @media (min-width: 62em) {
   .testimonials {
     padding: 6.8rem 0;
-  }
-  .testimonials__img {
-    width: 14rem;
-    height: 14rem;
   }
   .testimonials__item {
     padding: 4.2rem;
