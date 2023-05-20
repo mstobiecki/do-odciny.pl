@@ -10,6 +10,9 @@ const buttonLeftSlider = document.querySelector('.testimonials__button--left');
 const buttonRightSlider = document.querySelector(
 	'.testimonials__button--right'
 );
+const galleryImgs = document.querySelectorAll('.gallery__img');
+const galleryOpen = document.querySelector('.gallery__img--js');
+const galleryPopup = document.querySelector('.gallery__popup');
 
 const navigationMenu = function () {
 	header.classList.toggle('navigation__open--js');
@@ -44,6 +47,23 @@ const stickyNavigation = function () {
 const scrollToOfferSection = function (e) {
 	e.preventDefault();
 	offerSection.scrollIntoView({ behavior: 'smooth' });
+};
+
+const gallery = function (e) {
+	const currentImg = e.target;
+	const id = currentImg.dataset.img;
+	const imgSrc = currentImg.getAttribute('src');
+
+	let currentID = id;
+	const allImgs = galleryImgs.length;
+
+	galleryOpen.src = imgSrc;
+	galleryOpen.dataset.img = id;
+
+	galleryPopup.classList.remove('gallery__hidden--js');
+
+	console.log(galleryOpen);
+	console.log(allImgs);
 };
 
 const accordionMenu = function (e) {
@@ -107,3 +127,4 @@ hamburgerNavigation.addEventListener('click', navigationMenu);
 navigationList.addEventListener('click', smoothNavigation);
 heroButton.addEventListener('click', scrollToOfferSection);
 accordion.addEventListener('click', accordionMenu);
+galleryImgs.forEach((img) => img.addEventListener('click', gallery));

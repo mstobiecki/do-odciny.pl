@@ -1,0 +1,40 @@
+.gallery {
+	position: relative;
+	padding: $padding-section-mobile;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5rem;
+	}
+	&__img {
+		width: 30%;
+	}
+	&__popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+	&__close {
+		position: absolute;
+		top: 23%;
+		right: 23%;
+	}
+	&__previous {
+		position: absolute;
+		top: 50%;
+		left: 23%;
+	}
+	&__hidden--js {
+		display: none;
+	}
+	&__img--js {
+		width: 60%;
+	}
+}

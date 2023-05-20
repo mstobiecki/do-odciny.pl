@@ -431,6 +431,47 @@ section {
     padding: 9.8rem 0;
   }
 }
+.gallery {
+  position: relative;
+  padding: 4.8rem 0;
+}
+.gallery__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.gallery__img {
+  width: 30%;
+}
+.gallery__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.gallery__close {
+  position: absolute;
+  top: 23%;
+  right: 23%;
+}
+.gallery__previous {
+  position: absolute;
+  top: 50%;
+  left: 23%;
+}
+.gallery__hidden--js {
+  display: none;
+}
+.gallery__img--js {
+  width: 60%;
+}
+
 .why-we {
   padding: 4.8rem 0;
 }
