@@ -29,7 +29,6 @@ body {
   font-size: 1.6rem;
 }
 
-.heading-primary,
 .heading-secondary,
 .heading-tertiary,
 .heading-fourth {
@@ -41,7 +40,6 @@ body {
 }
 
 .heading-primary {
-  margin-bottom: 2rem;
   font-size: 2.8rem;
 }
 
@@ -73,10 +71,17 @@ body {
   html {
     font-size: 62.5%;
   }
+  .heading-primary {
+    padding: 0 3rem;
+  }
 }
 @media (min-width: 48em) {
   .container {
     padding: 0 3.2rem;
+  }
+  .heading-primary {
+    padding: 0;
+    line-height: 1.2;
   }
   .heading-secondary {
     margin-bottom: 6.8rem;
@@ -84,7 +89,7 @@ body {
 }
 @media (min-width: 62em) {
   .heading-primary {
-    font-size: 5.2rem;
+    font-size: 4.2rem;
   }
   .heading-secondary {
     font-size: 3rem;
@@ -94,6 +99,9 @@ body {
   }
 }
 @media (min-width: 75em) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
   .heading-secondary {
     margin-bottom: 9.8rem;
   }
@@ -219,9 +227,16 @@ section {
 .hero__wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 3rem;
+  gap: 4rem;
   padding: 0 1rem;
   text-align: center;
+}
+.hero__text-box {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
 }
 .hero__description {
   line-height: 1.6;
@@ -229,15 +244,15 @@ section {
 }
 .hero__button {
   display: inline-block;
-  margin-top: 2rem;
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 1.6rem;
-  background-color: #f59f00;
-  color: #fff;
+  background-color: #fcc419;
+  color: #212529;
 }
 .hero__image {
   width: 80%;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 @media (min-width: 36em) {
@@ -247,8 +262,11 @@ section {
 }
 @media (min-width: 48em) {
   .hero__wrapper {
-    grid-template-columns: 45fr 55fr;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+  .hero__text-box {
+    justify-content: end;
   }
   .hero__description {
     padding: 0 1rem;
@@ -261,11 +279,19 @@ section {
     gap: 3rem;
   }
   .hero__description {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   .hero__button {
     padding: 1.5rem 3rem;
     font-size: 1.8rem;
+  }
+}
+@media (min-width: 75em) {
+  .hero__wrapper {
+    justify-content: center;
+  }
+  .hero__description {
+    font-size: 2.2rem;
   }
 }
 .about-us {
@@ -386,7 +412,7 @@ section {
   font-size: 2rem;
   text-decoration: none;
   background-color: #fcc419;
-  color: #fff;
+  color: #212529;
 }
 
 @media (min-width: 36em) {
@@ -427,6 +453,8 @@ section {
   .why-we__wrapper {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 6rem;
+    justify-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 48em) {
@@ -435,9 +463,6 @@ section {
   }
 }
 @media (min-width: 75em) {
-  .why-we {
-    padding: 9.8rem 0;
-  }
   .why-we__wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -449,7 +474,7 @@ section {
 .step__wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  row-gap: 3rem;
 }
 .step__box {
   display: flex;
@@ -487,8 +512,7 @@ section {
   }
   .step__wrapper {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-    row-gap: 9rem;
+    gap: 9rem;
   }
   .step__text-box:nth-child(4) {
     grid-column: 2/3;
@@ -543,7 +567,7 @@ section {
   text-decoration: none;
   font-size: 2rem;
   background-color: #fcc419;
-  color: #fff;
+  color: #212529;
 }
 
 @media (min-width: 36em) {
@@ -774,7 +798,7 @@ section {
   background-color: #fcc419;
   padding: 0.6rem 1.2rem;
   font-weight: 500;
-  color: #333;
+  color: #212529;
 }
 .newsletter__approvals {
   display: flex;

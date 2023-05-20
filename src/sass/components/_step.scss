@@ -4,7 +4,7 @@
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 3rem;
+		row-gap: 3rem;
 	}
 	&__box {
 		display: flex;
@@ -42,8 +42,7 @@
 		padding: $padding-section-tablet;
 		&__wrapper {
 			grid-template-columns: repeat(2, 1fr);
-			column-gap: 3rem;
-			row-gap: 9rem;
+			gap: 9rem;
 		}
 		&__text-box:nth-child(4) {
 			grid-column: 2 / 3;

@@ -7,9 +7,16 @@
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
-		row-gap: 3rem;
+		gap: 4rem;
 		padding: 0 1rem;
 		text-align: center;
+	}
+	&__text-box {
+		display: flex;
+		justify-content: baseline;
+		align-items: center;
+		flex-direction: column;
+		gap: 3rem;
 	}
 	&__description {
 		line-height: $line-height-medium;
@@ -17,15 +24,15 @@
 	}
 	&__button {
 		display: inline-block;
-		margin-top: $margin-large;
 		padding: 1rem 2rem;
 		text-decoration: none;
 		font-size: $font-size-medium;
-		background-color: #f59f00;
-		color: #fff;
+		background-color: $medium-yellow;
+		color: $button-color;
 	}
 	&__image {
 		width: 80%;
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 	}
 }
 
@@ -40,9 +47,11 @@
 @media (min-width: 48em) {
 	.hero {
 		&__wrapper {
-			// grid-template-columns: repeat(2, 1fr);
-			grid-template-columns: 45fr 55fr;
+			grid-template-columns: repeat(2, 1fr);
 			align-items: center;
+		}
+		&__text-box {
+			justify-content: end;
 		}
 		&__description {
 			padding: 0 1rem;
@@ -58,11 +67,22 @@
 			gap: 3rem;
 		}
 		&__description {
-			font-size: $font-size-large-xxl;
+			font-size: $font-size-large;
 		}
 		&__button {
 			padding: 1.5rem 3rem;
 			font-size: $font-size-large;
+		}
+	}
+}
+
+@media (min-width: 75em) {
+	.hero {
+		&__wrapper {
+			justify-content: center;
+		}
+		&__description {
+			font-size: $font-size-large-xxl;
 		}
 	}
 }
