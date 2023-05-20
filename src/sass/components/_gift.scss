@@ -56,3 +56,15 @@
 		}
 	}
 }
+
+@media (min-width: 75em) {
+	.gift {
+		&__heading {
+			font-size: 4.2rem;
+		}
+		&__description {
+			width: 50%;
+			font-size: $font-size-large-xl;
+		}
+	}
+}

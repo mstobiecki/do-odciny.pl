@@ -2,6 +2,8 @@ const header = document.querySelector('.header');
 const hamburgerNavigation = document.querySelector('.btn-mobile-nav');
 const navigationList = document.querySelector('.navigation__list');
 const heroSection = document.querySelector('.hero');
+const heroButton = document.querySelector('.hero__button');
+const offerSection = document.querySelector('.offer');
 const accordion = document.querySelector('.accordion');
 const slides = document.querySelectorAll('.testimonials__item');
 const buttonLeftSlider = document.querySelector('.testimonials__button--left');
@@ -37,6 +39,11 @@ const stickyNavigation = function () {
 		rootMargin: `-${headerHeight}px`,
 	});
 	heroSectionObserver.observe(heroSection);
+};
+
+const scrollToOfferSection = function (e) {
+	e.preventDefault();
+	offerSection.scrollIntoView({ behavior: 'smooth' });
 };
 
 const accordionMenu = function (e) {
@@ -98,4 +105,5 @@ init();
 
 hamburgerNavigation.addEventListener('click', navigationMenu);
 navigationList.addEventListener('click', smoothNavigation);
+heroButton.addEventListener('click', scrollToOfferSection);
 accordion.addEventListener('click', accordionMenu);

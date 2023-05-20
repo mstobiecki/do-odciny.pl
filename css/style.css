@@ -350,64 +350,64 @@ section {
     width: 90%;
   }
 }
-.popular {
+.offer {
   padding: 4.8rem 0;
   background-color: #f1f3f5;
 }
-.popular__wrapper {
+.offer__wrapper {
   display: flex;
   flex-direction: column;
   gap: 6rem;
 }
-.popular__card {
+.offer__card {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
-.popular__image {
+.offer__image {
   width: 100%;
 }
-.popular__text-box {
+.offer__text-box {
   padding: 3.2rem;
 }
-.popular__info {
+.offer__info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.popular__price {
+.offer__price {
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
   letter-spacing: 1px;
   color: #fcc419;
 }
-.popular__time {
+.offer__time {
   margin-bottom: 2rem;
   font-size: 1.4rem;
 }
-.popular__list {
+.offer__list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   list-style: none;
   font-size: 1.6rem;
 }
-.popular__specifications {
+.offer__specifications {
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 1.8rem;
 }
-.popular__icon {
+.offer__icon {
   font-size: 2rem;
   color: #fcc419;
 }
-.popular__details {
+.offer__details {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
 }
-.popular__button {
+.offer__button {
   padding: 1rem 2rem;
   font-size: 2rem;
   text-decoration: none;
@@ -416,18 +416,18 @@ section {
 }
 
 @media (min-width: 36em) {
-  .popular__wrapper {
+  .offer__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 48em) {
-  .popular {
+  .offer {
     padding: 6.8rem 0;
   }
 }
 @media (min-width: 75em) {
-  .popular {
+  .offer {
     padding: 9.8rem 0;
   }
 }
@@ -590,6 +590,15 @@ section {
   }
   .gift__description {
     width: 50%;
+  }
+}
+@media (min-width: 75em) {
+  .gift__heading {
+    font-size: 4.2rem;
+  }
+  .gift__description {
+    width: 50%;
+    font-size: 2rem;
   }
 }
 .accordion {

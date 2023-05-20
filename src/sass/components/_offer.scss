@@ -1,4 +1,4 @@
-.popular {
+.offer {
 	padding: $padding-section-mobile;
 	background-color: $background-color-light;
 	&__wrapper {
@@ -60,7 +60,7 @@
 }
 
 @media (min-width: 36em) {
-	.popular {
+	.offer {
 		&__wrapper {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
@@ -69,13 +69,13 @@
 }
 
 @media (min-width: 48em) {
-	.popular {
+	.offer {
 		padding: $padding-section-tablet;
 	}
 }
 
 @media (min-width: 75em) {
-	.popular {
+	.offer {
 		padding: $padding-section-dekstop;
 	}
 }
