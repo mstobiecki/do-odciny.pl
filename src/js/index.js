@@ -13,6 +13,8 @@ const buttonRightSlider = document.querySelector(
 const galleryImgs = document.querySelectorAll('.gallery__img');
 const galleryOpen = document.querySelector('.gallery__img--js');
 const galleryPopup = document.querySelector('.gallery__popup');
+const galleryButtonNext = document.querySelector('.gallery__next');
+const galleryButtonPrevious = document.querySelector('.gallery__previous');
 
 const navigationMenu = function () {
 	header.classList.toggle('navigation__open--js');
@@ -51,16 +53,47 @@ const scrollToOfferSection = function (e) {
 
 const gallery = function (e) {
 	const currentImg = e.target;
-	const id = currentImg.dataset.img;
-	const imgSrc = currentImg.getAttribute('src');
+	let imgSrc = currentImg.getAttribute('src');
+	let id = currentImg.dataset.img;
 
 	let currentID = id;
 	const allImgs = galleryImgs.length;
 
-	galleryOpen.src = imgSrc;
-	galleryOpen.dataset.img = id;
+	const openGallery = function (img, dataId) {
+		galleryOpen.src = img;
+		galleryOpen.dataset.img = dataId;
+		galleryPopup.classList.remove('gallery__hidden--js');
+	};
+	openGallery(imgSrc, id);
 
-	galleryPopup.classList.remove('gallery__hidden--js');
+	const nextImg = function () {
+		if (currentID === allImgs) currentID = 1;
+		else currentID++;
+
+		const img = document.querySelector(
+			`.gallery__img[data-img="${currentID}"]`
+		);
+		imgSrc = img.getAttribute('src');
+		id = img.dataset.img;
+
+		openGallery(imgSrc, id);
+	};
+
+	const previousImg = function () {
+		if (currentID === 1) currentID = allImgs;
+		else currentID--;
+
+		const img = document.querySelector(
+			`.gallery__img[data-img="${currentID}"]`
+		);
+		imgSrc = img.getAttribute('src');
+		id = img.dataset.img;
+
+		openGallery(imgSrc, id);
+	};
+
+	galleryButtonNext.addEventListener('click', nextImg);
+	galleryButtonPrevious.addEventListener('click', previousImg);
 
 	console.log(galleryOpen);
 	console.log(allImgs);
