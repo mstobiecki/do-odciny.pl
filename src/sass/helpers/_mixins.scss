@@ -1,0 +1,16 @@
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin button {
+	display: inline-block;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	font-size: $font-size-small;
+	border: none;
+	background-color: $medium-yellow;
+	color: $button-color;
+	cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.contact {
+	padding: $padding-section-mobile;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: $gap-medium;
+	}
+	&__input,
+	&__message {
+		padding: 1rem 2rem;
+		font-size: $font-size-small;
+		font-family: 'Rubik', sans-serif;
+	}
+	&__message {
+		resize: vertical;
+		min-height: 15rem;
+	}
+	&__button-box {
+		margin-top: $margin-medium;
+		display: flex;
+	}
+	&__button {
+		@include button;
+	}
+	&__location {
+		width: 100%;
+	}
+}
