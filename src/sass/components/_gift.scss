@@ -29,7 +29,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.gift {
 		&__wrapper {
 			display: flex;
@@ -46,7 +46,7 @@
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.gift {
 		&__heading {
 			font-size: 3.2rem;
@@ -57,7 +57,7 @@
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.gift {
 		&__heading {
 			font-size: 4.2rem;

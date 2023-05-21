@@ -16,7 +16,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.why-we {
 		&__wrapper {
 			grid-template-columns: repeat(2, 1fr);
@@ -27,13 +27,13 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.why-we {
 		padding: $padding-section-tablet;
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.why-we {
 		&__wrapper {
 			grid-template-columns: repeat(4, 1fr);

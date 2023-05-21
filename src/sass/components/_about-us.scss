@@ -22,7 +22,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.about-us {
 		&__image {
 			width: 80%;
@@ -30,7 +30,7 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.about-us {
 		padding: $padding-section-tablet;
 		&__wrapper {
@@ -49,7 +49,7 @@
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.about-us {
 		&__description {
 			font-size: $font-size-large;

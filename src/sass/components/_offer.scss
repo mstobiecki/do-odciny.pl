@@ -59,7 +59,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.offer {
 		&__wrapper {
 			display: grid;
@@ -68,13 +68,13 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.offer {
 		padding: $padding-section-tablet;
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.offer {
 		padding: $padding-section-dekstop;
 	}

@@ -49,7 +49,7 @@
 	color: #333;
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.navigation {
 		position: static;
 		height: auto;

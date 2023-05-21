@@ -37,7 +37,7 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.step {
 		padding: $padding-section-tablet;
 		&__wrapper {
@@ -51,7 +51,7 @@
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.step {
 		&__wrapper {
 			align-items: center;
@@ -59,7 +59,7 @@
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.step {
 		padding: $padding-section-dekstop;
 		&__number {

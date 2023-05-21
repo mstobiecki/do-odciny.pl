@@ -36,7 +36,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.hero {
 		&__image {
 			width: 60%;
@@ -44,7 +44,7 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.hero {
 		&__wrapper {
 			grid-template-columns: repeat(2, 1fr);
@@ -59,7 +59,7 @@
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.hero {
 		&__text-box {
 			display: flex;
@@ -76,7 +76,7 @@
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.hero {
 		&__wrapper {
 			justify-content: center;

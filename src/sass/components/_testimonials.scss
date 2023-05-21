@@ -67,7 +67,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.testimonials {
 		&__description {
 			font-size: $font-size-medium;
@@ -82,7 +82,7 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.testimonials {
 		padding: $padding-section-tablet;
 		&__item {
@@ -91,7 +91,7 @@
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.testimonials {
 		padding: $padding-section-tablet;
 		&__item {
@@ -100,7 +100,7 @@
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.testimonials {
 		padding: $padding-section-dekstop;
 	}

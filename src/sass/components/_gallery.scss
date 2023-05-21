@@ -60,7 +60,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.gallery {
 		&__close {
 			top: 0;
@@ -74,13 +74,13 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.gallery {
 		padding: $padding-section-tablet;
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.gallery {
 		&__img--js {
 			width: 70%;
@@ -94,7 +94,7 @@
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.gallery {
 		padding: $padding-section-dekstop;
 	}

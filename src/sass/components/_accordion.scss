@@ -48,7 +48,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.accordion {
 		&__heading {
 			font-size: $font-size-large-xxl;
@@ -56,13 +56,13 @@
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.accordion {
 		padding: $padding-section-tablet;
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.accordion {
 		&__description {
 			font-size: $font-size-medium;
@@ -70,7 +70,7 @@
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.accordion {
 		padding: $padding-section-dekstop;
 	}

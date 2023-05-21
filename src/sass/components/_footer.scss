@@ -44,7 +44,7 @@
 	}
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	.footer {
 		&__logo,
 		&__address,
