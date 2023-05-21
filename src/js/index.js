@@ -56,16 +56,19 @@ const gallery = function (e) {
 	const currentImg = e.target;
 	let imgSrc = currentImg.getAttribute('src');
 	let id = currentImg.dataset.img;
+	let imgAlt = currentImg.getAttribute('alt');
 
 	let currentID = +id;
 	const allImgs = galleryImgs.length;
 
-	const openGallery = function (img, dataId) {
+	const openGallery = function (img, dataId, alt) {
 		galleryOpen.src = img;
 		galleryOpen.dataset.img = dataId;
+		galleryOpen.alt = alt;
+
 		galleryPopup.classList.remove('gallery__hidden--js');
 	};
-	openGallery(imgSrc, id);
+	openGallery(imgSrc, id, imgAlt);
 
 	const imgData = function (dataID) {
 		const img = document.querySelector(`.gallery__img[data-img="${dataID}"]`);
@@ -74,6 +77,7 @@ const gallery = function (e) {
 
 		imgSrc = img.getAttribute('src');
 		id = img.dataset.img;
+		imgAlt = img.getAttribute('alt');
 	};
 
 	const nextImg = function () {
@@ -81,7 +85,7 @@ const gallery = function (e) {
 		else currentID++;
 
 		imgData(currentID);
-		openGallery(imgSrc, id);
+		openGallery(imgSrc, id, imgAlt);
 	};
 
 	const previousImg = function () {
@@ -89,7 +93,7 @@ const gallery = function (e) {
 		else currentID--;
 
 		imgData(currentID);
-		openGallery(imgSrc, id);
+		openGallery(imgSrc, id, imgAlt);
 	};
 
 	const closeGallery = function () {
@@ -99,7 +103,6 @@ const gallery = function (e) {
 	galleryButtonNext.addEventListener('click', nextImg);
 	galleryButtonPrevious.addEventListener('click', previousImg);
 	galleryButtonClose.addEventListener('click', closeGallery);
-	galleryPopup.addEventListener('click', closeGallery);
 	document.addEventListener('keyup', function (e) {
 		e.key === 'ArrowRight' && nextImg();
 		e.key === 'ArrowLeft' && previousImg();

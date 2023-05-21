@@ -2,13 +2,17 @@
 	position: relative;
 	padding: $padding-section-mobile;
 	&__wrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 5rem;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		// gap: 2rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
 	}
 	&__img {
-		width: 30%;
+		width: 100%;
+		cursor: pointer;
 	}
 	&__popup {
 		position: fixed;
@@ -19,29 +23,79 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.98);
 		z-index: 200;
 	}
 	&__close {
 		position: absolute;
-		top: 5%;
-		right: 5%;
+		top: 10%;
+		right: 1%;
+	}
+	&__close,
+	&__previous,
+	&__next {
+		padding: 2rem;
+		border: none;
+		background-color: transparent;
+		color: $medium-yellow;
+		font-size: 2rem;
+		cursor: pointer;
 	}
 	&__previous,
 	&__next {
 		position: absolute;
-		top: 50%;
+		top: 46%;
 	}
 	&__previous {
-		left: 15%;
+		left: -2%;
 	}
 	&__next {
-		right: 15%;
+		right: -2%;
 	}
 	&__hidden--js {
 		display: none;
 	}
 	&__img--js {
-		width: 60%;
+		width: 80%;
+	}
+}
+
+@media (min-width: 36em) {
+	.gallery {
+		&__close {
+			top: 0;
+		}
+		&__next {
+			right: 0;
+		}
+		&__previous {
+			left: 0;
+		}
+	}
+}
+
+@media (min-width: 48em) {
+	.gallery {
+		padding: $padding-section-tablet;
+	}
+}
+
+@media (min-width: 62em) {
+	.gallery {
+		&__img--js {
+			width: 70%;
+		}
+		&__next {
+			right: 3%;
+		}
+		&__previous {
+			left: 3%;
+		}
+	}
+}
+
+@media (min-width: 75em) {
+	.gallery {
+		padding: $padding-section-dekstop;
 	}
 }
