@@ -15,6 +15,7 @@ const galleryOpen = document.querySelector('.gallery__img--js');
 const galleryPopup = document.querySelector('.gallery__popup');
 const galleryButtonNext = document.querySelector('.gallery__next');
 const galleryButtonPrevious = document.querySelector('.gallery__previous');
+const galleryButtonClose = document.querySelector('.gallery__close');
 
 const navigationMenu = function () {
 	header.classList.toggle('navigation__open--js');
@@ -56,7 +57,7 @@ const gallery = function (e) {
 	let imgSrc = currentImg.getAttribute('src');
 	let id = currentImg.dataset.img;
 
-	let currentID = id;
+	let currentID = +id;
 	const allImgs = galleryImgs.length;
 
 	const openGallery = function (img, dataId) {
@@ -66,16 +67,20 @@ const gallery = function (e) {
 	};
 	openGallery(imgSrc, id);
 
+	const imgData = function (dataID) {
+		const img = document.querySelector(`.gallery__img[data-img="${dataID}"]`);
+
+		if (!img) return;
+
+		imgSrc = img.getAttribute('src');
+		id = img.dataset.img;
+	};
+
 	const nextImg = function () {
 		if (currentID === allImgs) currentID = 1;
 		else currentID++;
 
-		const img = document.querySelector(
-			`.gallery__img[data-img="${currentID}"]`
-		);
-		imgSrc = img.getAttribute('src');
-		id = img.dataset.img;
-
+		imgData(currentID);
 		openGallery(imgSrc, id);
 	};
 
@@ -83,20 +88,23 @@ const gallery = function (e) {
 		if (currentID === 1) currentID = allImgs;
 		else currentID--;
 
-		const img = document.querySelector(
-			`.gallery__img[data-img="${currentID}"]`
-		);
-		imgSrc = img.getAttribute('src');
-		id = img.dataset.img;
-
+		imgData(currentID);
 		openGallery(imgSrc, id);
+	};
+
+	const closeGallery = function () {
+		galleryPopup.classList.add('gallery__hidden--js');
 	};
 
 	galleryButtonNext.addEventListener('click', nextImg);
 	galleryButtonPrevious.addEventListener('click', previousImg);
-
-	console.log(galleryOpen);
-	console.log(allImgs);
+	galleryButtonClose.addEventListener('click', closeGallery);
+	galleryPopup.addEventListener('click', closeGallery);
+	document.addEventListener('keyup', function (e) {
+		e.key === 'ArrowRight' && nextImg();
+		e.key === 'ArrowLeft' && previousImg();
+		e.key === 'Escape' && closeGallery();
+	});
 };
 
 const accordionMenu = function (e) {

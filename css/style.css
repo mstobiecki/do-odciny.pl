@@ -458,13 +458,18 @@ section {
 }
 .gallery__close {
   position: absolute;
-  top: 23%;
-  right: 23%;
+  top: 5%;
+  right: 5%;
 }
-.gallery__previous {
+.gallery__previous, .gallery__next {
   position: absolute;
   top: 50%;
-  left: 23%;
+}
+.gallery__previous {
+  left: 15%;
+}
+.gallery__next {
+  right: 15%;
 }
 .gallery__hidden--js {
   display: none;
