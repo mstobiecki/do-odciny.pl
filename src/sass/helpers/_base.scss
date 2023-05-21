@@ -65,7 +65,7 @@ body {
 	color: #f59f00;
 }
 
-@media (min-width: 36em) {
+@media (min-width: $large-mobile) {
 	html {
 		font-size: 62.5%;
 	}
@@ -74,7 +74,7 @@ body {
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
 	.container {
 		padding: 0 3.2rem;
 	}
@@ -87,7 +87,7 @@ body {
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: $small-desktop) {
 	.heading-primary {
 		font-size: 4.2rem;
 	}
@@ -99,7 +99,7 @@ body {
 	}
 }
 
-@media (min-width: 75em) {
+@media (min-width: $desktop) {
 	.heading-primary {
 		font-size: 5.2rem;
 	}

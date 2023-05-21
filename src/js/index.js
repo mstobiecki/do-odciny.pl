@@ -104,9 +104,11 @@ const gallery = function (e) {
 	galleryButtonPrevious.addEventListener('click', previousImg);
 	galleryButtonClose.addEventListener('click', closeGallery);
 	document.addEventListener('keyup', function (e) {
-		e.key === 'ArrowRight' && nextImg();
-		e.key === 'ArrowLeft' && previousImg();
-		e.key === 'Escape' && closeGallery();
+		if (!galleryPopup.classList.contains('gallery__hidden--js')) {
+			e.key === 'ArrowRight' && nextImg();
+			e.key === 'ArrowLeft' && previousImg();
+			e.key === 'Escape' && closeGallery();
+		}
 	});
 };
 
@@ -159,6 +161,10 @@ const slider = function () {
 
 	buttonRightSlider.addEventListener('click', nextSlide);
 	buttonLeftSlider.addEventListener('click', previousSlide);
+	document.addEventListener('keyup', function (e) {
+		e.key === 'ArrowRight' && nextSlide();
+		e.key === 'ArrowLeft' && previousSlide();
+	});
 };
 
 const init = function () {
