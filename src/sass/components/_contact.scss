@@ -29,5 +29,21 @@
 	}
 	&__location {
 		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (min-width: $tablet) {
+	.contact {
+		padding: $padding-section-tablet;
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.contact {
+		padding: $padding-section-dekstop;
 	}
 }

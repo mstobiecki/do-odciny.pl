@@ -520,6 +520,7 @@ section {
 }
 .why-we {
   padding: 4.8rem 0;
+  background-color: #f1f3f5;
 }
 .why-we__wrapper {
   display: grid;
@@ -556,7 +557,6 @@ section {
 }
 .step {
   padding: 4.8rem 0;
-  background-color: #f1f3f5;
 }
 .step__wrapper {
   display: grid;
@@ -987,8 +987,22 @@ section {
 }
 .contact__location {
   width: 100%;
+  height: 100%;
 }
 
+@media (min-width: 48em) {
+  .contact {
+    padding: 6.8rem 0;
+  }
+  .contact__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 75em) {
+  .contact {
+    padding: 9.8rem 0;
+  }
+}
 .footer {
   padding: 4.8rem 0;
   background-color: #f1f3f5;
