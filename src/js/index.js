@@ -167,9 +167,30 @@ const slider = function () {
 	});
 };
 
+const validateFormContact = function () {
+	const form = document.querySelector('.contact__form');
+	const inputName = document.querySelector('.contact__input--name');
+	const inputSurname = document.querySelector('.contact__input--surname');
+
+	const showError = function (message, input) {
+		const html = `<span class="contact__error">${message}</span>`;
+		input.insertAdjacentHTML('afterend', html);
+	};
+
+	const checkLength = function (input, message) {
+		if (input.value.trim() === '') showError(message, input);
+	};
+	form.addEventListener('submit', function (e) {
+		e.preventDefault();
+		checkLength(inputName, 'Pole imię nie może być puste.');
+		checkLength(inputSurname, 'Pole nazwisko nie może być puste.');
+	});
+};
+
 const init = function () {
 	stickyNavigation();
 	slider();
+	validateFormContact();
 };
 init();
 

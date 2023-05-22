@@ -989,6 +989,12 @@ section {
   width: 100%;
   height: 100%;
 }
+.contact__error {
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #ff6b6b;
+  color: #000;
+}
 
 @media (min-width: 48em) {
   .contact {
