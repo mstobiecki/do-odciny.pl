@@ -171,19 +171,47 @@ const validateFormContact = function () {
 	const form = document.querySelector('.contact__form');
 	const inputName = document.querySelector('.contact__input--name');
 	const inputSurname = document.querySelector('.contact__input--surname');
+	const inputEmail = document.querySelector('.contact__input--email');
+	const inputTel = document.querySelector('.contact__input--tel');
+	const inputMessage = document.querySelector('.contact__message--js');
 
 	const showError = function (message, input) {
-		const html = `<span class="contact__error">${message}</span>`;
+		clearError(input);
+		html = `<span class="contact__error">${message}</span>`;
 		input.insertAdjacentHTML('afterend', html);
+	};
+
+	const clearError = function (input) {
+		input.nextSibling?.remove();
 	};
 
 	const checkLength = function (input, message) {
 		if (input.value.trim() === '') showError(message, input);
+		else clearError(input);
 	};
+
+	const checkEmail = function (message) {
+		const pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+		if (!pattern.test(inputEmail.value)) showError(message, inputEmail);
+		else clearError(inputEmail);
+
+		// if (!inputEmail.value.includes('@') && !inputEmail.value.endsWith('.'))
+		// 	showError(message, inputEmail);
+		// else clearError(inputEmail);
+	};
+
+	const checkNumberPhone = function (message) {
+		if (!(+inputTel.value.length === 9)) showError(message, inputTel);
+		else clearError(inputTel);
+	};
+
 	form.addEventListener('submit', function (e) {
 		e.preventDefault();
 		checkLength(inputName, 'Pole imię nie może być puste.');
 		checkLength(inputSurname, 'Pole nazwisko nie może być puste.');
+		checkEmail('Uzupełnij poprawnie pole adres email.');
+		checkNumberPhone('Podaj prawidłowy numer telefonu.');
+		checkLength(inputMessage, 'Podaj wiadomość.');
 	});
 };
 

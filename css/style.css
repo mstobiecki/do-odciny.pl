@@ -963,6 +963,7 @@ section {
   gap: 1rem;
 }
 .contact__input, .contact__message {
+  width: 100%;
   padding: 1rem 2rem;
   font-size: 1.4rem;
   font-family: "Rubik", sans-serif;
@@ -994,6 +995,11 @@ section {
   font-size: 1.6rem;
   background-color: #ff6b6b;
   color: #000;
+}
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media (min-width: 48em) {

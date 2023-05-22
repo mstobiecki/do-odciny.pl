@@ -467,12 +467,22 @@
                 <h2 class="heading-secondary">Napisz do nas i wyjedź wybranym przez siebie samochodem</h2>
                 <div class="contact__wrapper">
                     <form class="contact__form" action="#">
-
-                        <input class="contact__input contact__input--name" type="text" placeholder="Imię">
-                        <input class="contact__input contact__input--surname" type="text" placeholder="Nazwisko">
-                        <input class="contact__input" type="email" placeholder="Email">
-                        <input class="contact__input" type="tel" placeholder="Telefon">
-                        <textarea class="contact__message" placeholder="Wiadomość"></textarea>
+                        <div class="contact__box">
+                            <input class="contact__input contact__input--name" type="text" placeholder="Imię">
+                        </div>
+                        <div class="contact__box">
+                            <input class="contact__input contact__input--surname" type="text" placeholder="Nazwisko">
+                        </div>
+                        <div class="contact__box">
+                            <input class="contact__input contact__input--email" type="email" placeholder="Email">
+                        </div>
+                        <div class="contact__box">
+                            <input class="contact__input contact__input--tel" type="tel" placeholder="Telefon"
+                                maxlength="9">
+                        </div>
+                        <div class="contact__box">
+                            <textarea class="contact__message contact__message--js" placeholder="Wiadomość"></textarea>
+                        </div>
                         <div class="contact__button-box">
                             <button class="contact__button" type="submit">Wyślij wiadomość</button>
                         </div>
