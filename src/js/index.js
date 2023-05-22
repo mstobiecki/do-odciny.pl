@@ -16,6 +16,12 @@ const galleryPopup = document.querySelector('.gallery__popup');
 const galleryButtonNext = document.querySelector('.gallery__next');
 const galleryButtonPrevious = document.querySelector('.gallery__previous');
 const galleryButtonClose = document.querySelector('.gallery__close');
+const form = document.querySelector('.contact__form');
+const inputName = document.querySelector('.contact__input--name');
+const inputSurname = document.querySelector('.contact__input--surname');
+const inputEmail = document.querySelector('.contact__input--email');
+const inputTel = document.querySelector('.contact__input--tel');
+const inputMessage = document.querySelector('.contact__message--js');
 
 const navigationMenu = function () {
 	header.classList.toggle('navigation__open--js');
@@ -168,13 +174,6 @@ const slider = function () {
 };
 
 const validateFormContact = function () {
-	const form = document.querySelector('.contact__form');
-	const inputName = document.querySelector('.contact__input--name');
-	const inputSurname = document.querySelector('.contact__input--surname');
-	const inputEmail = document.querySelector('.contact__input--email');
-	const inputTel = document.querySelector('.contact__input--tel');
-	const inputMessage = document.querySelector('.contact__message--js');
-
 	const showError = function (message, input) {
 		clearError(input);
 		html = `<span class="contact__error">${message}</span>`;
@@ -192,12 +191,9 @@ const validateFormContact = function () {
 
 	const checkEmail = function (message) {
 		const pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
 		if (!pattern.test(inputEmail.value)) showError(message, inputEmail);
 		else clearError(inputEmail);
-
-		// if (!inputEmail.value.includes('@') && !inputEmail.value.endsWith('.'))
-		// 	showError(message, inputEmail);
-		// else clearError(inputEmail);
 	};
 
 	const checkNumberPhone = function (message) {
@@ -205,14 +201,16 @@ const validateFormContact = function () {
 		else clearError(inputTel);
 	};
 
-	form.addEventListener('submit', function (e) {
+	const init = function (e) {
 		e.preventDefault();
 		checkLength(inputName, 'Pole imię nie może być puste.');
 		checkLength(inputSurname, 'Pole nazwisko nie może być puste.');
+		checkLength(inputMessage, 'Podaj wiadomość.');
 		checkEmail('Uzupełnij poprawnie pole adres email.');
 		checkNumberPhone('Podaj prawidłowy numer telefonu.');
-		checkLength(inputMessage, 'Podaj wiadomość.');
-	});
+	};
+
+	form.addEventListener('submit', init);
 };
 
 const init = function () {
