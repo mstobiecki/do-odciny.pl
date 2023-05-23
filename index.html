@@ -367,8 +367,12 @@
                         </p>
                     </div>
                     <div class="step__img-box">
-                        <img class="step__img" src="./src/img/step-3.webp"
-                            alt="Zdjęcie białego Mercedesa C63S w centrum miasta">
+                        <picture>
+                            <source srcset="./src/img/step-3.webp" type="image/webp">
+                            <source srcset="./src/img/step-3-min.jpg" type="image/jpg">
+                            <img class="step__img" src="./src/img/step-3-min.jpg"
+                                alt="Zdjęcie białego Mercedesa C63S w centrum miasta">
+                        </picture>
                     </div>
                 </div>
             </div>
