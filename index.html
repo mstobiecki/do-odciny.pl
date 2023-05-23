@@ -337,8 +337,12 @@
                         </p>
                     </div>
                     <div class="step__img-box">
-                        <img class="step__img" src="./src/img/step-1.webp"
-                            alt="Zdjęcie srebrnej BMW serii 5 na parkingu podziemnym">
+                        <picture>
+                            <source srcset="./src/img/step-1.webp" type="image/webp">
+                            <source srcset="./src/img/step-1-min.jpg" type="image/jpg">
+                            <img class="step__img" src="./src/img/step-1-min.jpg"
+                                alt="Zdjęcie srebrnej BMW serii 5 na parkingu podziemnym">
+                        </picture>
                     </div>
                     <div class="step__img-box">
                         <img class="step__img" src="./src/img/step-2.webp"
