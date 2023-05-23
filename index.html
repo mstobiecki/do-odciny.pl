@@ -88,8 +88,12 @@
                 <div class="offer__wrapper">
                     <div class="offer__card">
                         <div class="offer__image-box">
-                            <img class="offer__image" src="./src/img/card-1.webp"
-                                alt="Zdjęcie limonkowego samochodu w lesie - BMW M3 G80 Competition">
+                            <picture>
+                                <source srcset="./src/img/card-1.webp" type="image/webp">
+                                <source srcset="./src/img/card-1-min.jpg" type="image/jpg">
+                                <img class="offer__image" src="./src/img/card-1-min.jpg"
+                                    alt="Zdjęcie limonkowego samochodu w lesie - BMW M3 G80 Competition">
+                            </picture>
                         </div>
                         <div class="offer__text-box">
                             <h3 class="heading-tertiary">BMW M3 Competition</h3>
