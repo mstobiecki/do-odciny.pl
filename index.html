@@ -204,8 +204,12 @@
                     </div>
                     <div class="offer__card">
                         <div class="offer__image-box">
-                            <img class="offer__image" src="./src/img/card-4.webp"
-                                alt="Zdjęcie czerwonego samochodu - Toyota Supra MK5">
+                            <picture>
+                                <source srcset="./src/img/card-4.webp" type="image/webp">
+                                <source srcset="./src/img/card-4-min.jpg" type="image/jpg">
+                                <img class="offer__image" src="./src/img/card-4-min.jpg"
+                                    alt="Zdjęcie czerwonego samochodu - Toyota Supra MK5">
+                            </picture>
                         </div>
                         <div class="offer__text-box">
                             <h3 class="heading-tertiary">Toyota Supra MK5</h3>
