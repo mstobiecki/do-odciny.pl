@@ -174,7 +174,10 @@ const slider = function () {
 };
 
 const validateFormContact = function () {
-	const showError = function (message, input) {
+	const showError = function (
+		message = 'Uzupełnij poprawnie formularz.',
+		input
+	) {
 		clearError(input);
 		html = `<span class="contact__error">${message}</span>`;
 		input.insertAdjacentHTML('afterend', html);

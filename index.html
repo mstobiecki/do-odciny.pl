@@ -21,7 +21,7 @@
                 <li class="navigation__item"><a class="navigation__link" href="#about-us">O nas</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="#offer">Oferta</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="#accordion">FAQ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Kontakt</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contact">Kontakt</a></li>
             </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -42,7 +42,12 @@
                     </div>
                 </div>
                 <div class="hero__image-box">
-                    <img class="hero__image" src="./src/img/hero.webp" alt="Zdjęcie przodu samochodu - BMW M4">
+                    <picture>
+                        <source srcset="./src/img/hero.webp" type="image/webp">
+                        <source srcset="./src/img/hero-min.jpg" type="image/jpg">
+                        <img class="hero__image" src="./src/img/hero-min.jpg"
+                            alt="Zdjęcie przodu czarnego samochodu - BMW M4">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -66,7 +71,12 @@
                         </p>
                     </div>
                     <div class="about-us__image-box">
-                        <img class="about-us__image" src="./src/img/about-us-1.webp" alt="Wnętrze samochodu Mercedes">
+                        <picture>
+                            <source srcset="./src/img/about-us.webp" type="image/webp">
+                            <source srcset="./src/img/about-us-min.jpg" type="image/jpg">
+                            <img class="about-us__image" src="./src/img/about-us-min.jpg"
+                                alt="Wnętrze samochodu Mercedes">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -461,7 +471,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <span class="subheading">Kontakt</span>
                 <h2 class="heading-secondary">Napisz do nas i wyjedź wybranym przez siebie samochodem</h2>
