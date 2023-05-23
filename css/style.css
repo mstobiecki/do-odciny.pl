@@ -629,7 +629,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../src/img/voucher.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../src/img/voucher-min.jpg");
   height: 60vh;
   background-size: cover;
   background-position: center;
@@ -672,6 +672,9 @@ section {
   }
 }
 @media (min-width: 62em) {
+  .gift {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../src/img/voucher.jpg");
+  }
   .gift__heading {
     font-size: 3.2rem;
   }

@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url('../src/img/voucher.webp');
+		url('../src/img/voucher-min.jpg');
 	height: 60vh;
 	background-size: cover;
 	background-position: center;
@@ -48,6 +48,8 @@
 
 @media (min-width: $small-desktop) {
 	.gift {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+			url('../src/img/voucher.jpg');
 		&__heading {
 			font-size: 3.2rem;
 		}
