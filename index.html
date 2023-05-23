@@ -127,8 +127,12 @@
 
                     <div class="offer__card">
                         <div class="offer__image-box">
-                            <img class="offer__image" src="./src/img/card-2.webp"
-                                alt="Zdjęcie niebieskiego samochodu - Audi RS3">
+                            <picture>
+                                <source srcset="./src/img/card-2.webp" type="image/webp">
+                                <source srcset="./src/img/card-2-min.jpg" type="image/jpg">
+                                <img class="offer__image" src="./src/img/card-2-min.jpg"
+                                    alt="Zdjęcie niebieskiego samochodu - Audi RS3">
+                            </picture>
                         </div>
                         <div class="offer__text-box">
                             <h3 class="heading-tertiary">Audi RS3</h3>
