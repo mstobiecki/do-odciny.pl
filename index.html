@@ -166,8 +166,12 @@
 
                     <div class="offer__card">
                         <div class="offer__image-box">
-                            <img class="offer__image" src="./src/img/card-3.webp"
-                                alt="Zdjęcie białego samochodu z boku - Mercedes C63S">
+                            <picture>
+                                <source srcset="./src/img/card-3.webp" type="image/webp">
+                                <source srcset="./src/img/card-3-min.jpg" type="image/jpg">
+                                <img class="offer__image" src="./src/img/card-3-min.jpg"
+                                    alt="Zdjęcie białego samochodu z boku - Mercedes C63S">
+                            </picture>
                         </div>
                         <div class="offer__text-box">
                             <h3 class="heading-tertiary">Mercedes C63S</h3>
