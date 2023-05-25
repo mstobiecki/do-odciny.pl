@@ -22,6 +22,7 @@ const inputSurname = document.querySelector('.contact__input--surname');
 const inputEmail = document.querySelector('.contact__input--email');
 const inputTel = document.querySelector('.contact__input--tel');
 const inputMessage = document.querySelector('.contact__message--js');
+const allSections = document.querySelectorAll('.section--js');
 
 const navigationMenu = function () {
 	header.classList.toggle('navigation__open--js');
@@ -216,10 +217,32 @@ const validateFormContact = function () {
 	form.addEventListener('submit', init);
 };
 
+const animateSections = function () {
+	const revealSection = function (entries, observer) {
+		const [entry] = entries;
+
+		if (!entry.isIntersecting) return;
+
+		entry.target.classList.remove('section--hidden');
+		observer.unobserve(entry.target);
+	};
+
+	const sectionObserver = new IntersectionObserver(revealSection, {
+		root: null,
+		threshold: 0.15,
+	});
+
+	allSections.forEach((section) => {
+		sectionObserver.observe(section);
+		section.classList.add('section--hidden');
+	});
+};
+
 const init = function () {
 	stickyNavigation();
 	slider();
 	validateFormContact();
+	animateSections();
 };
 init();
 

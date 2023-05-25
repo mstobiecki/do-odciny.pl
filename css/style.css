@@ -67,6 +67,16 @@ body {
   color: #f59f00;
 }
 
+section {
+  scroll-margin: 6rem;
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 @media (min-width: 36em) {
   html {
     font-size: 62.5%;
@@ -106,10 +116,6 @@ body {
     margin-bottom: 9.8rem;
   }
 }
-section {
-  scroll-margin: 6rem;
-}
-
 .sticky .header {
   position: fixed;
   top: 0;
