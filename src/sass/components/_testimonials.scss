@@ -3,7 +3,7 @@
 	background-color: $background-color-light;
 	&__wrapper {
 		max-width: 90rem;
-		height: 20rem;
+		min-height: 23rem;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
@@ -12,7 +12,7 @@
 		position: absolute;
 		top: 0;
 		width: 100%;
-		padding: 1.5rem;
+		padding: 2.5rem;
 		transition: transform 1s;
 		background-color: #fff;
 		border: 1px solid $medium-gray;
@@ -58,11 +58,11 @@
 		z-index: 10;
 	}
 	&__button--left {
-		left: 3%;
+		left: 4%;
 		transform: translate(-50%, -50%);
 	}
 	&__button--right {
-		right: 3%;
+		right: 4%;
 		transform: translate(50%, -50%);
 	}
 }
@@ -95,7 +95,7 @@
 	.testimonials {
 		padding: $padding-section-tablet;
 		&__item {
-			padding: 4.2rem;
+			// padding: 4.2rem;
 		}
 	}
 }

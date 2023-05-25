@@ -40,7 +40,7 @@ body {
 }
 
 .heading-primary {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 
 .heading-secondary {
@@ -68,7 +68,7 @@ body {
 }
 
 section {
-  scroll-margin: 9.5rem;
+  scroll-margin: 6rem;
   transition: transform 1s, opacity 1s;
 }
 
@@ -96,10 +96,13 @@ section {
   .heading-secondary {
     margin-bottom: 6.8rem;
   }
+  .heading-secondary--special {
+    margin-bottom: 3.8rem;
+  }
 }
 @media (min-width: 62em) {
   .heading-primary {
-    font-size: 4.2rem;
+    font-size: 3.3rem;
   }
   .heading-secondary {
     font-size: 3rem;
@@ -110,10 +113,18 @@ section {
 }
 @media (min-width: 75em) {
   .heading-primary {
-    font-size: 5.2rem;
+    font-size: 4.2rem;
   }
   .heading-secondary {
     margin-bottom: 9.8rem;
+  }
+  .heading-secondary--special {
+    margin-bottom: 3.8rem;
+  }
+}
+@media (min-width: 87em) {
+  .heading-primary {
+    font-size: 5rem;
   }
 }
 .sticky .header {
@@ -277,6 +288,9 @@ section {
   .hero__description {
     padding: 0 1rem;
   }
+  .hero__image {
+    width: 100%;
+  }
 }
 @media (min-width: 62em) {
   .hero__text-box {
@@ -291,6 +305,9 @@ section {
     padding: 1.5rem 3rem;
     font-size: 1.8rem;
   }
+  .hero__image {
+    width: 80%;
+  }
 }
 @media (min-width: 75em) {
   .hero__wrapper {
@@ -298,6 +315,12 @@ section {
   }
   .hero__description {
     font-size: 2.2rem;
+  }
+  .hero__image {
+    width: 70%;
+  }
+  .hero__text-box {
+    gap: 5rem;
   }
 }
 .about-us {
@@ -606,10 +629,14 @@ section {
   .step__wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 9rem;
+    align-items: center;
   }
   .step__text-box:nth-child(4) {
     grid-column: 2/3;
     grid-row: 2/3;
+  }
+  .step__description {
+    margin-top: 2rem;
   }
 }
 @media (min-width: 62em) {
@@ -773,7 +800,7 @@ section {
 }
 .testimonials__wrapper {
   max-width: 90rem;
-  height: 20rem;
+  min-height: 23rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -782,7 +809,7 @@ section {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 1.5rem;
+  padding: 2.5rem;
   transition: transform 1s;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -830,11 +857,11 @@ section {
   z-index: 10;
 }
 .testimonials__button--left {
-  left: 3%;
+  left: 4%;
   transform: translate(-50%, -50%);
 }
 .testimonials__button--right {
-  right: 3%;
+  right: 4%;
   transform: translate(50%, -50%);
 }
 
@@ -860,9 +887,6 @@ section {
 @media (min-width: 62em) {
   .testimonials {
     padding: 6.8rem 0;
-  }
-  .testimonials__item {
-    padding: 4.2rem;
   }
 }
 @media (min-width: 75em) {

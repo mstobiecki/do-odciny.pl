@@ -56,6 +56,9 @@
 		&__description {
 			padding: 0 1rem;
 		}
+		&__image {
+			width: 100%;
+		}
 	}
 }
 
@@ -73,6 +76,9 @@
 			padding: 1.5rem 3rem;
 			font-size: $font-size-large;
 		}
+		&__image {
+			width: 80%;
+		}
 	}
 }
 
@@ -83,6 +89,12 @@
 		}
 		&__description {
 			font-size: $font-size-large-xxl;
+		}
+		&__image {
+			width: 70%;
+		}
+		&__text-box {
+			gap: 5rem;
 		}
 	}
 }

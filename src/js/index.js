@@ -43,7 +43,6 @@ const smoothNavigation = function (e) {
 
 const stickyNavigation = function () {
 	const headerHeight = header.getBoundingClientRect().height;
-	console.log(headerHeight);
 	const sticky = function (entries) {
 		const [entry] = entries;
 
@@ -246,7 +245,7 @@ const init = function () {
 	stickyNavigation();
 	slider();
 	validateFormContact();
-	animateSections();
+	// animateSections();
 };
 init();
 
