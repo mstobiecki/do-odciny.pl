@@ -23,6 +23,9 @@ const inputEmail = document.querySelector('.contact__input--email');
 const inputTel = document.querySelector('.contact__input--tel');
 const inputMessage = document.querySelector('.contact__message--js');
 const allSections = document.querySelectorAll('.section--js');
+const contactSection = document.querySelector('.contact');
+const offerButtons = document.querySelectorAll('.offer__button');
+const giftButton = document.querySelector('.gift__button');
 
 const navigationMenu = function () {
 	header.classList.toggle('navigation__open--js');
@@ -40,6 +43,7 @@ const smoothNavigation = function (e) {
 
 const stickyNavigation = function () {
 	const headerHeight = header.getBoundingClientRect().height;
+	console.log(headerHeight);
 	const sticky = function (entries) {
 		const [entry] = entries;
 
@@ -54,9 +58,9 @@ const stickyNavigation = function () {
 	heroSectionObserver.observe(heroSection);
 };
 
-const scrollToOfferSection = function (e) {
+const scrollToSection = function (e) {
 	e.preventDefault();
-	offerSection.scrollIntoView({ behavior: 'smooth' });
+	this.scrollIntoView({ behavior: 'smooth' });
 };
 
 const gallery = function (e) {
@@ -205,7 +209,7 @@ const validateFormContact = function () {
 		else clearError(inputTel);
 	};
 
-	const init = function (e) {
+	const validate = function (e) {
 		e.preventDefault();
 		checkLength(inputName, 'Pole imię nie może być puste.');
 		checkLength(inputSurname, 'Pole nazwisko nie może być puste.');
@@ -214,7 +218,7 @@ const validateFormContact = function () {
 		checkNumberPhone('Podaj prawidłowy numer telefonu.');
 	};
 
-	form.addEventListener('submit', init);
+	form.addEventListener('submit', validate);
 };
 
 const animateSections = function () {
@@ -248,6 +252,10 @@ init();
 
 hamburgerNavigation.addEventListener('click', navigationMenu);
 navigationList.addEventListener('click', smoothNavigation);
-heroButton.addEventListener('click', scrollToOfferSection);
+heroButton.addEventListener('click', scrollToSection.bind(offerSection));
+giftButton.addEventListener('click', scrollToSection.bind(contactSection));
+offerButtons.forEach((button) =>
+	button.addEventListener('click', scrollToSection.bind(contactSection))
+);
 accordion.addEventListener('click', accordionMenu);
 galleryImgs.forEach((img) => img.addEventListener('click', gallery));

@@ -68,7 +68,7 @@ body {
 }
 
 section {
-  scroll-margin: 6rem;
+  scroll-margin: 9.5rem;
   transition: transform 1s, opacity 1s;
 }
 
