@@ -67,7 +67,14 @@ body {
 
 section {
 	scroll-margin: 6rem;
-	transition: transform 1s, opacity 1s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.error-form {
+	padding: 1rem;
+	font-size: $font-size-medium;
+	background-color: #ff6b6b;
+	color: #000;
 }
 
 .section--hidden {

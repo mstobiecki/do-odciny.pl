@@ -69,7 +69,14 @@ body {
 
 section {
   scroll-margin: 6rem;
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.error-form {
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #ff6b6b;
+  color: #000;
 }
 
 .section--hidden {
@@ -914,19 +921,29 @@ section {
   line-height: 1.6;
 }
 .newsletter__form {
+  display: flex;
+  flex-direction: column;
   margin-top: 2rem;
   font-size: 0;
+  width: 100%;
+}
+.newsletter__box {
+  display: flex;
+  flex-direction: column;
 }
 .newsletter__input {
-  padding: 0.6rem 1.2rem;
+  padding: 0.9rem 1.8rem;
   border: none;
+  font-size: 1.6rem;
   background-color: #f8f9fa;
 }
 .newsletter__button {
   border: none;
   background-color: #fcc419;
-  padding: 0.6rem 1.2rem;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
+  cursor: pointer;
   color: #212529;
 }
 .newsletter__approvals {
@@ -981,6 +998,9 @@ section {
     padding: 1.5rem 3rem;
     font-size: 1.6rem;
   }
+  .newsletter__form {
+    width: 60%;
+  }
 }
 .contact {
   padding: 4.8rem 0;
@@ -1022,12 +1042,6 @@ section {
 .contact__location {
   width: 100%;
   height: 100%;
-}
-.contact__error {
-  padding: 1rem;
-  font-size: 1.6rem;
-  background-color: #ff6b6b;
-  color: #000;
 }
 .contact__box {
   display: flex;

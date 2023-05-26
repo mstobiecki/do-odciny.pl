@@ -16,12 +16,14 @@ const galleryPopup = document.querySelector('.gallery__popup');
 const galleryButtonNext = document.querySelector('.gallery__next');
 const galleryButtonPrevious = document.querySelector('.gallery__previous');
 const galleryButtonClose = document.querySelector('.gallery__close');
-const form = document.querySelector('.contact__form');
+const contactForm = document.querySelector('.contact__form');
 const inputName = document.querySelector('.contact__input--name');
 const inputSurname = document.querySelector('.contact__input--surname');
 const inputEmail = document.querySelector('.contact__input--email');
 const inputTel = document.querySelector('.contact__input--tel');
 const inputMessage = document.querySelector('.contact__message--js');
+const newsletterForm = document.querySelector('.newsletter__form');
+const inputNewsletter = document.querySelector('.newsletter__input');
 const allSections = document.querySelectorAll('.section--js');
 const contactSection = document.querySelector('.contact');
 const offerButtons = document.querySelectorAll('.offer__button');
@@ -183,7 +185,7 @@ const validateFormContact = function () {
 		input
 	) {
 		clearError(input);
-		html = `<span class="contact__error">${message}</span>`;
+		html = `<span class="error-form">${message}</span>`;
 		input.insertAdjacentHTML('afterend', html);
 	};
 
@@ -196,11 +198,11 @@ const validateFormContact = function () {
 		else clearError(input);
 	};
 
-	const checkEmail = function (message) {
+	const checkEmail = function (message, input) {
 		const pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-		if (!pattern.test(inputEmail.value)) showError(message, inputEmail);
-		else clearError(inputEmail);
+		if (!pattern.test(input.value)) showError(message, input);
+		else clearError(input);
 	};
 
 	const checkNumberPhone = function (message) {
@@ -208,16 +210,22 @@ const validateFormContact = function () {
 		else clearError(inputTel);
 	};
 
-	const validate = function (e) {
+	const validateContact = function (e) {
 		e.preventDefault();
 		checkLength(inputName, 'Pole imię nie może być puste.');
 		checkLength(inputSurname, 'Pole nazwisko nie może być puste.');
 		checkLength(inputMessage, 'Podaj wiadomość.');
-		checkEmail('Uzupełnij poprawnie pole adres email.');
+		checkEmail('Uzupełnij poprawnie pole adres email.', inputEmail);
 		checkNumberPhone('Podaj prawidłowy numer telefonu.');
 	};
 
-	form.addEventListener('submit', validate);
+	const validateNewsletter = function (e) {
+		e.preventDefault();
+		checkEmail('Uzupełnij poprawnie pole adres email.', inputNewsletter);
+	};
+
+	contactForm.addEventListener('submit', validateContact);
+	newsletterForm.addEventListener('submit', validateNewsletter);
 };
 
 const animateSections = function () {
@@ -245,7 +253,7 @@ const init = function () {
 	stickyNavigation();
 	slider();
 	validateFormContact();
-	// animateSections();
+	animateSections();
 };
 init();
 
