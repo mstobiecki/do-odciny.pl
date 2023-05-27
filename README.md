@@ -9,15 +9,15 @@
 ## Screenshots 📺
 
 <p align="center">
-    <img src="./img/s1.png" alt="Screenshot">
+    <img src="./src/img/s1.png" alt="Screenshot">
 </p>
 
 <p align="center">
-    <img src="./img/s2.png" alt="Screenshot">
+    <img src="./src/img/s2.png" alt="Screenshot">
 </p>
 
 <p align="center">
-    <img src="./img/s3.png" alt="Screenshot">
+    <img src="./src/img/s3.png" alt="Screenshot">
 </p>
 
 ## Installation 💾
