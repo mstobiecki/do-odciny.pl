@@ -13,7 +13,7 @@
 		font-size: 2.4rem;
 	}
 	&__description {
-		font-size: $font-size-medium;
+		font-size: $font-size-small;
 		line-height: $line-height-small;
 	}
 	&__box {
@@ -21,11 +21,11 @@
 		@include flexCenter;
 	}
 	&__button {
+		@include button;
 		padding: 1rem 2rem;
-		text-decoration: none;
-		font-size: 2rem;
-		background-color: $medium-yellow;
-		color: $button-color;
+	}
+	&__button:hover {
+		@include buttonHover;
 	}
 }
 
@@ -55,6 +55,7 @@
 		}
 		&__description {
 			width: 50%;
+			font-size: $font-size-medium;
 		}
 	}
 }

@@ -52,7 +52,7 @@ body {
 
 .heading-fourth {
 	margin-bottom: 1rem;
-	font-size: $font-size-large;
+	font-size: $font-size-medium;
 	font-weight: 700;
 }
 
@@ -72,7 +72,7 @@ section {
 
 .error-form {
 	padding: 1rem;
-	font-size: $font-size-medium;
+	font-size: $font-size-small;
 	background-color: #ff6b6b;
 	color: #000;
 }
@@ -115,6 +115,9 @@ section {
 		font-size: 3rem;
 	}
 	.subheading {
+		font-size: $font-size-medium;
+	}
+	.error-form {
 		font-size: $font-size-medium;
 	}
 }

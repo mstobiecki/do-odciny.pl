@@ -10,7 +10,7 @@
 		display: flex;
 	}
 	&__description {
-		font-size: $font-size-medium;
+		font-size: $font-size-small;
 		line-height: $line-height-medium;
 	}
 	&__image-box {
@@ -52,7 +52,7 @@
 @media (min-width: $small-desktop) {
 	.about-us {
 		&__description {
-			font-size: $font-size-large;
+			font-size: $font-size-medium;
 		}
 		&__image {
 			width: 90%;

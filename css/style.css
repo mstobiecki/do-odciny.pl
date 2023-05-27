@@ -26,7 +26,7 @@ body {
 .logo {
   text-decoration: none;
   color: #555;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .heading-secondary,
@@ -63,7 +63,7 @@ body {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #f59f00;
 }
 
@@ -115,7 +115,10 @@ section {
     font-size: 3rem;
   }
   .subheading {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+  .error-form {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 75em) {
@@ -188,7 +191,7 @@ section {
 .navigation__link {
   text-decoration: none;
   font-size: 2.8rem;
-  color: #e67700;
+  color: #333;
 }
 .navigation__open--js .navigation {
   opacity: 1;
@@ -267,12 +270,18 @@ section {
   font-size: 1.6rem;
 }
 .hero__button {
-  display: inline-block;
-  padding: 1rem 2rem;
+  display: block;
+  border: none;
   text-decoration: none;
   font-size: 1.6rem;
   background-color: #fcc419;
   color: #212529;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 1rem 2rem;
+}
+.hero__button:hover {
+  background-color: #ffd43b;
 }
 .hero__image {
   width: 80%;
@@ -294,6 +303,7 @@ section {
   }
   .hero__description {
     padding: 0 1rem;
+    font-size: 1.8rem;
   }
   .hero__image {
     width: 100%;
@@ -418,7 +428,7 @@ section {
 }
 .offer__time {
   margin-bottom: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .offer__list {
   display: flex;
@@ -431,7 +441,7 @@ section {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .offer__icon {
   font-size: 2rem;
@@ -445,10 +455,17 @@ section {
 }
 .offer__button {
   padding: 1rem 2rem;
-  font-size: 2rem;
+  display: block;
+  border: none;
   text-decoration: none;
+  font-size: 1.6rem;
   background-color: #fcc419;
   color: #212529;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.offer__button:hover {
+  background-color: #ffd43b;
 }
 
 @media (min-width: 36em) {
@@ -460,6 +477,11 @@ section {
 @media (min-width: 48em) {
   .offer {
     padding: 6.8rem 0;
+  }
+}
+@media (min-width: 62em) {
+  .offer__time, .offer__list, .offer__specifications {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 75em) {
@@ -586,6 +608,11 @@ section {
     padding: 6.8rem 0;
   }
 }
+@media (min-width: 62em) {
+  .why-we__description {
+    font-size: 1.8rem;
+  }
+}
 @media (min-width: 75em) {
   .why-we__wrapper {
     grid-template-columns: repeat(4, 1fr);
@@ -650,6 +677,9 @@ section {
   .step__wrapper {
     align-items: center;
   }
+  .step__description {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 75em) {
   .step {
@@ -660,9 +690,6 @@ section {
   }
   .step__heading {
     font-size: 3.6rem;
-  }
-  .step__description {
-    font-size: 1.8rem;
   }
 }
 .gift {
@@ -690,11 +717,18 @@ section {
   align-items: center;
 }
 .gift__button {
-  padding: 1rem 2rem;
+  display: block;
+  border: none;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   background-color: #fcc419;
   color: #212529;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 1rem 2rem;
+}
+.gift__button:hover {
+  background-color: #ffd43b;
 }
 
 @media (min-width: 36em) {
@@ -720,6 +754,7 @@ section {
   }
   .gift__description {
     width: 50%;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 75em) {
@@ -747,7 +782,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .accordion__heading {
   font-weight: 500;
@@ -766,7 +801,7 @@ section {
 .accordion__description {
   max-height: 0;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   overflow: hidden;
   transition: all 0.4s;
 }
@@ -775,7 +810,7 @@ section {
 }
 .accordion__open--js {
   padding-top: 1.5rem;
-  max-height: 10rem;
+  max-height: 30rem;
 }
 .accordion__border--js {
   box-shadow: inset 0px 5px 2px -3px #fcc419;
@@ -793,7 +828,7 @@ section {
 }
 @media (min-width: 62em) {
   .accordion__description {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 75em) {
@@ -806,17 +841,17 @@ section {
   background-color: #f1f3f5;
 }
 .testimonials__wrapper {
-  max-width: 90rem;
-  min-height: 23rem;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
+  max-width: 90rem;
+  height: 23rem;
   overflow: hidden;
 }
 .testimonials__item {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 2.5rem;
+  padding: 3rem;
   transition: transform 1s;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -843,7 +878,7 @@ section {
   line-height: 1.6;
 }
 .testimonials__description {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .testimonials__author {
   margin-top: 1rem;
@@ -874,13 +909,19 @@ section {
 
 @media (min-width: 36em) {
   .testimonials__description {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .testimonials__job, .testimonials__author {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .testimonials__item {
     padding: 2.5rem;
+  }
+  .testimonials__button--left {
+    left: 2%;
+  }
+  .testimonials__button--right {
+    right: 2%;
   }
 }
 @media (min-width: 48em) {
@@ -917,7 +958,7 @@ section {
 }
 .newsletter__description {
   margin-top: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 .newsletter__form {
@@ -938,20 +979,26 @@ section {
   background-color: #f8f9fa;
 }
 .newsletter__button {
+  display: block;
   border: none;
-  background-color: #fcc419;
-  padding: 0.9rem 1.8rem;
+  text-decoration: none;
   font-size: 1.6rem;
-  font-weight: 500;
-  cursor: pointer;
+  background-color: #fcc419;
   color: #212529;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 0.9rem 1.8rem;
+  font-weight: 500;
+}
+.newsletter__button:hover {
+  background-color: #ffd43b;
 }
 .newsletter__approvals {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-top: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .newsletter__private {
   text-decoration: none;
@@ -964,11 +1011,11 @@ section {
     font-size: 2.8rem;
   }
   .newsletter__description, .newsletter__label, .newsletter__approvals {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .newsletter__input, .newsletter__button {
     padding: 1rem 2rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 48em) {
@@ -984,7 +1031,7 @@ section {
     justify-self: end;
   }
   .newsletter__input, .newsletter__button {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 62em) {
@@ -992,14 +1039,14 @@ section {
     font-size: 2.8rem;
   }
   .newsletter__description {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .newsletter__input, .newsletter__button {
     padding: 1.5rem 3rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .newsletter__form {
-    width: 60%;
+    width: 80%;
   }
 }
 .contact {
@@ -1018,7 +1065,7 @@ section {
 .contact__input, .contact__message {
   width: 100%;
   padding: 1rem 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
 }
 .contact__message {
@@ -1030,14 +1077,15 @@ section {
   display: flex;
 }
 .contact__button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-size: 1.4rem;
+  display: block;
   border: none;
+  text-decoration: none;
+  font-size: 1.6rem;
   background-color: #fcc419;
   color: #212529;
   cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 1rem 2rem;
 }
 .contact__location {
   width: 100%;
@@ -1055,6 +1103,11 @@ section {
   }
   .contact__wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 62em) {
+  .contact__input, .contact__message {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 75em) {
@@ -1080,7 +1133,7 @@ section {
 .footer__logo {
   display: block;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__item {
   font-size: 2rem;
@@ -1090,7 +1143,7 @@ section {
 }
 .footer__heading {
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 .footer__address {
@@ -1098,7 +1151,7 @@ section {
   flex-direction: column;
   gap: 0.5rem;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__phone {
   margin-top: 1rem;
@@ -1108,9 +1161,9 @@ section {
   color: #555;
 }
 
-@media (min-width: 36em) {
+@media (min-width: 62em) {
   .footer__logo, .footer__address, .footer__heading {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 

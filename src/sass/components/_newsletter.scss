@@ -30,17 +30,16 @@
 	&__input {
 		padding: 0.9rem 1.8rem;
 		border: none;
-		font-size: $font-size-medium;
+		font-size: $font-size-small;
 		background-color: #f8f9fa;
 	}
 	&__button {
-		border: none;
-		background-color: $medium-yellow;
+		@include button;
 		padding: 0.9rem 1.8rem;
-		font-size: $font-size-medium;
 		font-weight: 500;
-		cursor: pointer;
-		color: $button-color;
+	}
+	&__button:hover {
+		@include buttonHover;
 	}
 	&__approvals {
 		display: flex;
@@ -106,7 +105,7 @@
 			font-size: $font-size-medium;
 		}
 		&__form {
-			width: 60%;
+			width: 80%;
 		}
 	}
 }

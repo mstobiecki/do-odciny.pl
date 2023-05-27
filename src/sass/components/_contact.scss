@@ -27,6 +27,7 @@
 	}
 	&__button {
 		@include button;
+		padding: 1rem 2rem;
 	}
 	&__location {
 		width: 100%;
@@ -44,6 +45,15 @@
 		padding: $padding-section-tablet;
 		&__wrapper {
 			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (min-width: $small-desktop) {
+	.contact {
+		&__input,
+		&__message {
+			font-size: $font-size-medium;
 		}
 	}
 }

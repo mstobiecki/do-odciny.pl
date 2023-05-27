@@ -22,12 +22,12 @@
 	}
 	&__number {
 		font-weight: 500;
-		font-size: $font-size-large;
+		font-size: $font-size-medium;
 		color: #cbcaca;
 	}
 	&__icon {
 		color: $medium-yellow;
-		font-size: $font-size-large;
+		font-size: $font-size-medium;
 	}
 	&__description {
 		max-height: 0;
@@ -41,7 +41,7 @@
 	}
 	&__open--js {
 		padding-top: 1.5rem;
-		max-height: 10rem;
+		max-height: 30rem;
 	}
 	&__border--js {
 		box-shadow: inset 0px 5px 2px -3px $medium-yellow;

@@ -2,17 +2,17 @@
 	padding: $padding-section-mobile;
 	background-color: $background-color-light;
 	&__wrapper {
-		max-width: 90rem;
-		min-height: 23rem;
-		margin: 0 auto;
 		position: relative;
+		margin: 0 auto;
+		max-width: 90rem;
+		height: 23rem;
 		overflow: hidden;
 	}
 	&__item {
 		position: absolute;
 		top: 0;
 		width: 100%;
-		padding: 2.5rem;
+		padding: 3rem;
 		transition: transform 1s;
 		background-color: #fff;
 		border: 1px solid $medium-gray;
@@ -37,7 +37,7 @@
 		line-height: $line-height-medium;
 	}
 	&__description {
-		font-size: $font-size-small;
+		font-size: 1.3rem;
 	}
 	&__author {
 		margin-top: 1rem;
@@ -79,6 +79,12 @@
 		&__item {
 			padding: 2.5rem;
 		}
+		&__button--left {
+			left: 2%;
+		}
+		&__button--right {
+			right: 2%;
+		}
 	}
 }
 
@@ -94,9 +100,6 @@
 @media (min-width: $small-desktop) {
 	.testimonials {
 		padding: $padding-section-tablet;
-		&__item {
-			// padding: 4.2rem;
-		}
 	}
 }
 

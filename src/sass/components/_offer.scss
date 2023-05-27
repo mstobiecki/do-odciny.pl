@@ -34,13 +34,13 @@
 		flex-direction: column;
 		gap: $gap-medium;
 		list-style: none;
-		font-size: $font-size-medium;
+		font-size: $font-size-small;
 	}
 	&__specifications {
 		display: flex;
 		align-items: center;
 		gap: $gap-medium;
-		font-size: $font-size-large;
+		font-size: $font-size-small;
 	}
 	&__icon {
 		font-size: 2rem;
@@ -52,10 +52,10 @@
 	}
 	&__button {
 		padding: 1rem 2rem;
-		font-size: 2rem;
-		text-decoration: none;
-		background-color: $medium-yellow;
-		color: $button-color;
+		@include button;
+	}
+	&__button:hover {
+		@include buttonHover;
 	}
 }
 
@@ -74,6 +74,15 @@
 	}
 }
 
+@media (min-width: $small-desktop) {
+	.offer {
+		&__time,
+		&__list,
+		&__specifications {
+			font-size: $font-size-medium;
+		}
+	}
+}
 @media (min-width: $desktop) {
 	.offer {
 		padding: $padding-section-dekstop;

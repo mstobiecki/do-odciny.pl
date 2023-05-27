@@ -4,13 +4,19 @@
 	align-items: center;
 }
 
+// padding: 1rem 2rem;
+
 @mixin button {
-	display: inline-block;
-	padding: 1rem 2rem;
+	display: block;
+	border: none;
 	text-decoration: none;
 	font-size: $font-size-small;
-	border: none;
 	background-color: $medium-yellow;
 	color: $button-color;
 	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+@mixin buttonHover {
+	background-color: $hover-yellow;
 }

@@ -20,15 +20,14 @@
 	}
 	&__description {
 		line-height: $line-height-medium;
-		font-size: $font-size-medium;
+		font-size: $font-size-small;
 	}
 	&__button {
-		display: inline-block;
+		@include button;
 		padding: 1rem 2rem;
-		text-decoration: none;
-		font-size: $font-size-medium;
-		background-color: $medium-yellow;
-		color: $button-color;
+	}
+	&__button:hover {
+		@include buttonHover;
 	}
 	&__image {
 		width: 80%;
@@ -55,6 +54,7 @@
 		}
 		&__description {
 			padding: 0 1rem;
+			font-size: $font-size-medium;
 		}
 		&__image {
 			width: 100%;
@@ -70,11 +70,11 @@
 			gap: 3rem;
 		}
 		&__description {
-			font-size: $font-size-large;
+			font-size: $font-size-medium;
 		}
 		&__button {
 			padding: 1.5rem 3rem;
-			font-size: $font-size-large;
+			font-size: $font-size-medium;
 		}
 		&__image {
 			width: 80%;
