@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>do-odciny.pl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +17,10 @@
         <a class="logo" href="#">do-odciny.pl</a>
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="#about-us">O nas</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#offer">Oferta</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#accordion">FAQ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#contact">Kontakt</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#o-nas">O nas</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#oferta">Oferta</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#faq">FAQ</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
         <button aria-label="Nawigacja" class="btn-mobile-nav">
@@ -29,7 +28,7 @@
         </button>
     </header>
     <main class="main">
-        <section class="hero" aria-label="Nagłówek">
+        <section class="hero" aria-label="Nagłówek hero">
             <div class="hero__wrapper">
                 <div class="hero__text-box">
                     <h1 class="heading-primary">Wypożyczalnia sportowych samochodów, która spełnia Twoje oczekiwania
@@ -45,19 +44,18 @@
                     <picture>
                         <source srcset="./src/img/hero.webp" type="image/webp">
                         <source srcset="./src/img/hero-min.jpg" type="image/jpg">
-                        <img class="hero__image" src="./src/img/hero-min.jpg"
-                            alt="Zdjęcie przodu czarnego samochodu - BMW M4">
+                        <img class="hero__image" src="./src/img/hero-min.jpg" alt="Przód czarnego samochodu - BMW M4">
                     </picture>
                 </div>
             </div>
         </section>
-        <section id="about-us" class="about-us section--js" aria-label="O nas">
+        <section id="o-nas" class="about-us section--js" aria-label="O nas">
             <div class="container">
                 <div class="about-us__wrapper">
-                    <div class="abous-us__title">
+                    <hgroup class="abous-us__title">
                         <span class="subheading">Poznaj nas bliżej</span>
                         <h2 class="heading-secondary heading-secondary--special">Jaki cel mamy?</h2>
-                    </div>
+                    </hgroup>
                     <div class="about-us__text-box">
                         <p class="about-us__description">
                             Pragniemy zapewnić naszym klientom niezapomniane doświadczenia za kierownicą sportowych
@@ -76,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section id="offer" class="offer section--js" aria-label="Oferta">
+        <section id="oferta" class="offer section--js" aria-label="Oferta">
             <div class="container">
                 <span class="subheading">Oferta</span>
                 <h2 class="heading-secondary">Lista samochodów, którzy nasi klienci uwielbiają</h2>
@@ -296,30 +294,30 @@
                 <h2 class="heading-secondary">Wybierz dowolny samochód i ciesz się jazdą</h2>
                 <div class="why-we__wrapper">
                     <div class="why-we__box">
-                        <h4 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
+                        <h3 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
                             Minimum formalności
-                        </h4>
+                        </h3>
                         <p class="why-we__description">Wybierz dowolny samochód z naszej oferty, podpisz z nami umowę i
                             po
                             zapłaceniu czerp przyjemność z jazdy!</p>
                     </div>
                     <div class="why-we__box">
-                        <h4 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
-                            Brak ograniczeń</h4>
+                        <h3 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
+                            Brak ograniczeń</h3>
                         <p class="why-we__description">Sportowe samochody są po to, by używać ich zgodnie z
                             przeznaczeniem!
                             Uważamy, że od karania jest policja. ;)</p>
                     </div>
                     <div class="why-we__box">
-                        <h4 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
+                        <h3 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
                             Wynajem bez kaucji
-                        </h4>
+                        </h3>
                         <p class="why-we__description">Nie pobieramy dodatkowych środków za wypożczenie samochodu jako
                             depozyt.</p>
                     </div>
                     <div class="why-we__box">
-                        <h4 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
-                            Dostępność 24/7</h4>
+                        <h3 class="heading-fourth"><i aria-hidden="true" class="why-we__icon fa-solid fa-check"></i>
+                            Dostępność 24/7</h3>
                         <p class="why-we__description">Auto możemy podprowadzić w dowolne miejsce w Polsce o porze dnia,
                             którą wybierzesz.</p>
                     </div>
@@ -397,7 +395,7 @@
                 </div>
             </div>
         </section>
-        <section id="accordion" class="accordion section--js" aria-label="Częste pytania">
+        <section id="faq" class="accordion section--js" aria-label="Częste pytania">
             <div class="container">
                 <span class="subheading">FAQ</span>
                 <h2 class="heading-secondary">Najczęstsze pytania naszych klientów</h2>
@@ -538,7 +536,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact section--js" aria-label="Kontakt">
+        <section id="kontakt" class="contact section--js" aria-label="Kontakt">
             <div class="container">
                 <span class="subheading">Kontakt</span>
                 <h2 class="heading-secondary">Napisz do nas i wyjedź wybranym przez siebie samochodem</h2>
@@ -585,11 +583,11 @@
                 <div class="footer__logo-box">
                     <a class="logo" href="#">do-odciny.pl</a>
                     <ul class="footer__socials">
-                        <li class="footer__item"><a class="footer__link" href="#"><i
+                        <li aria-hidden="true" class="footer__item"><a class="footer__link" href="#"><i
                                     class="fa-brands fa-square-facebook"></i></a></li>
-                        <li class="footer__item"><a class="footer__link"><i
+                        <li aria-hidden="true" class="footer__item"><a class="footer__link"><i
                                     class="fa-brands fa-square-instagram"></i></a></li>
-                        <li class="footer__item"><a class="footer__link" href="#"><i
+                        <li aria-hidden="true" class="footer__item"><a class="footer__link" href="#"><i
                                     class="fa-brands fa-square-twitter"></i></a></li>
                     </ul>
                 </div>
